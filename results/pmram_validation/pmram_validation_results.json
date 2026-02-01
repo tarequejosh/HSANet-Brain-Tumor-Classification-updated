@@ -1,0 +1,73 @@
+{
+  "accuracy": 0.9946843853820598,
+  "f1": 0.9946110696499458,
+  "kappa": 0.9929101234486478,
+  "total_samples": 1505,
+  "misclassified_count": 8,
+  "misclassified": [
+    {
+      "index": 32,
+      "path": "/Users/tarequejosh/Documents/Research_2026/MRI_updated/files_updated/PMRAM Bangladeshi Brain Cancer - MRI Dataset/Raw/512Glioma/glioma (59).jpg",
+      "true": "Glioma",
+      "pred": "Meningioma",
+      "confidence": 0.35007238388061523,
+      "epistemic": 0.0
+    },
+    {
+      "index": 106,
+      "path": "/Users/tarequejosh/Documents/Research_2026/MRI_updated/files_updated/PMRAM Bangladeshi Brain Cancer - MRI Dataset/Raw/512Glioma/glioma (73).jpg",
+      "true": "Glioma",
+      "pred": "Meningioma",
+      "confidence": 0.9921777844429016,
+      "epistemic": 0.0
+    },
+    {
+      "index": 114,
+      "path": "/Users/tarequejosh/Documents/Research_2026/MRI_updated/files_updated/PMRAM Bangladeshi Brain Cancer - MRI Dataset/Raw/512Glioma/glioma (45).jpg",
+      "true": "Glioma",
+      "pred": "Meningioma",
+      "confidence": 0.9719445705413818,
+      "epistemic": 0.0
+    },
+    {
+      "index": 123,
+      "path": "/Users/tarequejosh/Documents/Research_2026/MRI_updated/files_updated/PMRAM Bangladeshi Brain Cancer - MRI Dataset/Raw/512Glioma/glioma (53).jpg",
+      "true": "Glioma",
+      "pred": "Meningioma",
+      "confidence": 0.7669232487678528,
+      "epistemic": 0.0
+    },
+    {
+      "index": 249,
+      "path": "/Users/tarequejosh/Documents/Research_2026/MRI_updated/files_updated/PMRAM Bangladeshi Brain Cancer - MRI Dataset/Raw/512Glioma/glioma (112).jpg",
+      "true": "Glioma",
+      "pred": "No Tumor",
+      "confidence": 0.7244793772697449,
+      "epistemic": 0.0
+    },
+    {
+      "index": 254,
+      "path": "/Users/tarequejosh/Documents/Research_2026/MRI_updated/files_updated/PMRAM Bangladeshi Brain Cancer - MRI Dataset/Raw/512Glioma/glioma (153).jpg",
+      "true": "Glioma",
+      "pred": "Meningioma",
+      "confidence": 0.9120539426803589,
+      "epistemic": 0.0
+    },
+    {
+      "index": 305,
+      "path": "/Users/tarequejosh/Documents/Research_2026/MRI_updated/files_updated/PMRAM Bangladeshi Brain Cancer - MRI Dataset/Raw/512Glioma/glioma (41).jpg",
+      "true": "Glioma",
+      "pred": "No Tumor",
+      "confidence": 0.5201840400695801,
+      "epistemic": 0.0
+    },
+    {
+      "index": 309,
+      "path": "/Users/tarequejosh/Documents/Research_2026/MRI_updated/files_updated/PMRAM Bangladeshi Brain Cancer - MRI Dataset/Raw/512Glioma/glioma (61).jpg",
+      "true": "Glioma",
+      "pred": "Meningioma",
+      "confidence": 0.9766774773597717,
+      "epistemic": 0.0
+    }
+  ]
+}

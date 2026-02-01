@@ -1,0 +1,153 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{sung2021global}
+\citation{louis2021who}
+\citation{ostrom2021cbtrus}
+\citation{pope2018brain}
+\citation{rimmer2017radiologist}
+\citation{bruno2015understanding}
+\citation{krizhevsky2012imagenet,raghu2019transfusion}
+\citation{deepak2019brain,badvza2020classification,swati2019brain,aurna2022multiclass}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}\protected@file@percent }
+\citation{chen2018encoder}
+\citation{woo2018cbam}
+\citation{hu2018squeeze}
+\citation{gal2016dropout}
+\citation{lakshminarayanan2017simple}
+\citation{sensoy2018evidential}
+\citation{mohsen2018classification}
+\citation{swati2019brain,badvza2020classification}
+\citation{deepak2019brain}
+\citation{rehman2020deep}
+\citation{tan2019efficientnet}
+\citation{aurna2022multiclass}
+\citation{kibriya2022novel}
+\citation{hu2018squeeze}
+\citation{saeedi2023mri}
+\citation{yu2016multi}
+\citation{chen2018encoder}
+\citation{lin2017feature}
+\citation{oktay2018attention}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{II}{2}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Deep Learning for Brain Tumor Classification}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Multi-Scale Feature Extraction}{2}{subsection.2.2}\protected@file@percent }
+\citation{neal2012bayesian}
+\citation{gal2016dropout}
+\citation{lakshminarayanan2017simple}
+\citation{sensoy2018evidential}
+\citation{leibig2017leveraging}
+\citation{sensoy2018evidential}
+\citation{tan2019efficientnet}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Uncertainty Quantification in Deep Learning}{3}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {III}Methods}{3}{section.3}\protected@file@percent }
+\newlabel{sec:methods}{{III}{3}{Methods}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Problem Formulation}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Network Architecture Overview}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Feature Extraction Backbone}{3}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Adaptive Multi-Scale Module (AMSM)}{3}{subsection.3.4}\protected@file@percent }
+\citation{woo2018cbam}
+\citation{sensoy2018evidential}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Overall HSANet architecture. Input MRI images are processed through the EfficientNet-B3 backbone, with features extracted at three spatial resolutions (stages 3, 5, 7). Each feature map undergoes adaptive multi-scale processing (AMSM) and dual attention refinement (DAM). Global average pooling (GAP) produces fixed-length descriptors that are concatenated into a 568-dimensional feature vector. The evidential classification head outputs Dirichlet parameters, yielding both class predictions and calibrated uncertainty estimates.}}{4}{figure.1}\protected@file@percent }
+\newlabel{fig:architecture}{{1}{4}{Overall HSANet architecture. Input MRI images are processed through the EfficientNet-B3 backbone, with features extracted at three spatial resolutions (stages 3, 5, 7). Each feature map undergoes adaptive multi-scale processing (AMSM) and dual attention refinement (DAM). Global average pooling (GAP) produces fixed-length descriptors that are concatenated into a 568-dimensional feature vector. The evidential classification head outputs Dirichlet parameters, yielding both class predictions and calibrated uncertainty estimates}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Adaptive Multi-Scale Module (AMSM) architecture. Parallel dilated convolutions with dilation rates $d \in \{1, 2, 4\}$ capture features at effective receptive fields (RF) of 3×3, 5×5, and 9×9. Adaptive fusion weights $\mathbf  {w}_i$ are learned through global average pooling and MLP with softmax normalization. A residual connection preserves original features.}}{4}{figure.2}\protected@file@percent }
+\newlabel{fig:amsm}{{2}{4}{Adaptive Multi-Scale Module (AMSM) architecture. Parallel dilated convolutions with dilation rates $d \in \{1, 2, 4\}$ capture features at effective receptive fields (RF) of 3×3, 5×5, and 9×9. Adaptive fusion weights $\mathbf {w}_i$ are learned through global average pooling and MLP with softmax normalization. A residual connection preserves original features}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-E}}Dual Attention Module (DAM)}{4}{subsection.3.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Dual Attention Module (DAM) architecture. Channel attention identifies ``what'' features are informative through parallel global average/max pooling and shared MLP. Spatial attention determines ``where'' to focus through channel-wise pooling and 7×7 convolution. Sequential application enables feature refinement through ``what'' followed by ``where'' reasoning.}}{4}{figure.3}\protected@file@percent }
+\newlabel{fig:dam}{{3}{4}{Dual Attention Module (DAM) architecture. Channel attention identifies ``what'' features are informative through parallel global average/max pooling and shared MLP. Spatial attention determines ``where'' to focus through channel-wise pooling and 7×7 convolution. Sequential application enables feature refinement through ``what'' followed by ``where'' reasoning}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-F}}Multi-Scale Feature Aggregation}{4}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-G}}Evidential Classification Head}{4}{subsection.3.7}\protected@file@percent }
+\citation{lin2017focal}
+\citation{msoud_nickparvar_2021}
+\citation{loshchilov2017decoupled}
+\citation{loshchilov2016sgdr}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-H}}Training Objective}{5}{subsection.3.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Experiments}{5}{section.4}\protected@file@percent }
+\newlabel{sec:experiments}{{IV}{5}{Experiments}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Dataset Description}{5}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Preprocessing and Augmentation}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Implementation Details}{5}{subsection.4.3}\protected@file@percent }
+\citation{selvaraju2017grad}
+\citation{deepak2019brain}
+\citation{badvza2020classification}
+\citation{swati2019brain}
+\citation{rehman2020deep}
+\citation{aurna2022multiclass}
+\citation{kibriya2022novel}
+\citation{saeedi2023mri}
+\citation{tandel2024multiclass}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Per-Class Classification Performance on Test Set (n=1,311)}}{6}{table.1}\protected@file@percent }
+\newlabel{tab:results}{{I}{6}{Per-Class Classification Performance on Test Set (n=1,311)}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Evaluation Metrics}{6}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Results}{6}{section.5}\protected@file@percent }
+\newlabel{sec:results}{{V}{6}{Results}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Classification Performance}{6}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Comparison with State-of-the-Art}{6}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Ablation Study}{6}{subsection.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Confusion matrix for test set classification (n=1,311). Near-diagonal dominance demonstrates excellent discrimination across all four classes, with only three misclassifications occurring at the glioma-meningioma and pituitary-meningioma boundaries.}}{6}{figure.4}\protected@file@percent }
+\newlabel{fig:confusion}{{4}{6}{Confusion matrix for test set classification (n=1,311). Near-diagonal dominance demonstrates excellent discrimination across all four classes, with only three misclassifications occurring at the glioma-meningioma and pituitary-meningioma boundaries}{figure.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Comparison with State-of-the-Art Methods}}{6}{table.2}\protected@file@percent }
+\newlabel{tab:comparison}{{II}{6}{Comparison with State-of-the-Art Methods}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Uncertainty Quantification}{6}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Cross-Validation}{6}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-F}}Computational Efficiency}{6}{subsection.5.6}\protected@file@percent }
+\citation{van2021artificial}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Receiver operating characteristic (ROC) curves for all four classes. All classes achieve AUC $\geq $ 0.9999, indicating near-perfect discrimination. The curves closely trace the upper-left corner, confirming high sensitivity and specificity across all decision thresholds.}}{7}{figure.5}\protected@file@percent }
+\newlabel{fig:roc}{{5}{7}{Receiver operating characteristic (ROC) curves for all four classes. All classes achieve AUC $\geq $ 0.9999, indicating near-perfect discrimination. The curves closely trace the upper-left corner, confirming high sensitivity and specificity across all decision thresholds}{figure.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Ablation Study Results}}{7}{table.3}\protected@file@percent }
+\newlabel{tab:ablation}{{III}{7}{Ablation Study Results}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-G}}Interpretability Analysis}{7}{subsection.5.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Discussion}{7}{section.6}\protected@file@percent }
+\newlabel{sec:discussion}{{VI}{7}{Discussion}{section.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Reliability diagram showing the relationship between predicted confidence and actual accuracy. The close alignment with the diagonal indicates well-calibrated predictions (ECE = 0.019). Overconfident predictions (below diagonal) and underconfident predictions (above diagonal) are both minimal.}}{7}{figure.6}\protected@file@percent }
+\newlabel{fig:reliability}{{6}{7}{Reliability diagram showing the relationship between predicted confidence and actual accuracy. The close alignment with the diagonal indicates well-calibrated predictions (ECE = 0.019). Overconfident predictions (below diagonal) and underconfident predictions (above diagonal) are both minimal}{figure.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusion}{7}{section.7}\protected@file@percent }
+\newlabel{sec:conclusion}{{VII}{7}{Conclusion}{section.7}{}}
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{sung2021global}{1}
+\bibcite{louis2021who}{2}
+\bibcite{ostrom2021cbtrus}{3}
+\bibcite{pope2018brain}{4}
+\bibcite{rimmer2017radiologist}{5}
+\bibcite{bruno2015understanding}{6}
+\bibcite{krizhevsky2012imagenet}{7}
+\bibcite{raghu2019transfusion}{8}
+\bibcite{deepak2019brain}{9}
+\bibcite{badvza2020classification}{10}
+\bibcite{swati2019brain}{11}
+\bibcite{aurna2022multiclass}{12}
+\bibcite{chen2018encoder}{13}
+\bibcite{woo2018cbam}{14}
+\bibcite{hu2018squeeze}{15}
+\bibcite{gal2016dropout}{16}
+\bibcite{lakshminarayanan2017simple}{17}
+\bibcite{sensoy2018evidential}{18}
+\bibcite{mohsen2018classification}{19}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Grad-CAM attention visualizations for representative samples from each class. The heatmaps highlight regions contributing most strongly to classification decisions. (a) Glioma: attention on irregular tumor mass and perilesional edema. (b) Meningioma: focus on well-circumscribed extra-axial enhancement. (c) No Tumor: distributed attention across normal parenchyma without focal abnormality. (d) Pituitary: selective attention on the sellar/suprasellar region. These attention patterns correspond to established diagnostic criteria used by neuroradiologists, enhancing clinical interpretability and trust.}}{8}{figure.7}\protected@file@percent }
+\newlabel{fig:gradcam}{{7}{8}{Grad-CAM attention visualizations for representative samples from each class. The heatmaps highlight regions contributing most strongly to classification decisions. (a) Glioma: attention on irregular tumor mass and perilesional edema. (b) Meningioma: focus on well-circumscribed extra-axial enhancement. (c) No Tumor: distributed attention across normal parenchyma without focal abnormality. (d) Pituitary: selective attention on the sellar/suprasellar region. These attention patterns correspond to established diagnostic criteria used by neuroradiologists, enhancing clinical interpretability and trust}{figure.7}{}}
+\@writefile{toc}{\contentsline {section}{References}{8}{section*.1}\protected@file@percent }
+\bibcite{rehman2020deep}{20}
+\bibcite{tan2019efficientnet}{21}
+\bibcite{kibriya2022novel}{22}
+\bibcite{saeedi2023mri}{23}
+\bibcite{yu2016multi}{24}
+\bibcite{lin2017feature}{25}
+\bibcite{oktay2018attention}{26}
+\bibcite{neal2012bayesian}{27}
+\bibcite{leibig2017leveraging}{28}
+\bibcite{lin2017focal}{29}
+\bibcite{msoud_nickparvar_2021}{30}
+\bibcite{loshchilov2017decoupled}{31}
+\bibcite{loshchilov2016sgdr}{32}
+\bibcite{selvaraju2017grad}{33}
+\bibcite{tandel2024multiclass}{34}
+\bibcite{van2021artificial}{35}
+\@writefile{toc}{\contentsline {section}{Biographies}{9}{IEEEbiography.0}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Md. Assaduzzaman}{9}{IEEEbiography.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Md. Tareque Jamil Josh}{9}{IEEEbiography.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Md. Aminur Rahman Joy}{9}{IEEEbiography.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Md. Nafish Imtiaz Imti}{9}{IEEEbiography.4}\protected@file@percent }
+\gdef \@abspage@last{9}

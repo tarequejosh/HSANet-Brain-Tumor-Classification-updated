@@ -1,0 +1,185 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{sung2021global}
+H.~Sung, J.~Ferlay, R.~L. Siegel, M.~Laversanne, I.~Soerjomataram, A.~Jemal,
+  F.~Bray, Global cancer statistics 2020: {GLOBOCAN} estimates of incidence and
+  mortality worldwide for 36 cancers in 185 countries, CA: A Cancer Journal for
+  Clinicians 71~(3) (2021) 209--249.
+
+\bibitem{louis2021who}
+D.~N. Louis, A.~Perry, P.~Wesseling, D.~J. Brat, I.~A. Cree,
+  D.~Figarella-Branger, C.~Hawkins, H.~Ng, S.~M. Pfister, G.~Reifenberger,
+  et~al., The 2021 {WHO} classification of tumors of the central nervous
+  system: a summary, Neuro-oncology 23~(8) (2021) 1231--1251.
+
+\bibitem{ostrom2021cbtrus}
+Q.~T. Ostrom, N.~Patil, G.~Cioffi, K.~Waite, C.~Kruchko, J.~S. Barnholtz-Sloan,
+  {CBTRUS} statistical report: primary brain and other central nervous system
+  tumors diagnosed in the {United States} in 2014--2018, Neuro-oncology
+  23~(Supplement\_3) (2021) iii1--iii105.
+
+\bibitem{pope2018brain}
+W.~B. Pope, Brain tumor imaging, Seminars in Neurology 38~(1) (2018) 11--24.
+
+\bibitem{rimmer2017radiologist}
+A.~Rimmer, Radiologist shortage leaves patients waiting for diagnoses, BMJ 359
+  (2017) j4683.
+
+\bibitem{bruno2015understanding}
+M.~A. Bruno, E.~A. Walker, H.~H. Abujudeh, Understanding and confronting our
+  mistakes: the epidemiology of error in radiology and strategies for error
+  reduction, Radiographics 35~(6) (2015) 1668--1676.
+
+\bibitem{krizhevsky2012imagenet}
+A.~Krizhevsky, I.~Sutskever, G.~E. Hinton, {ImageNet} classification with deep
+  convolutional neural networks, in: Advances in Neural Information Processing
+  Systems, Vol.~25, 2012, pp. 1097--1105.
+
+\bibitem{raghu2019transfusion}
+M.~Raghu, C.~Zhang, J.~Kleinberg, S.~Bengio, Transfusion: Understanding
+  transfer learning for medical imaging, in: Advances in Neural Information
+  Processing Systems, Vol.~32, 2019.
+
+\bibitem{deepak2019brain}
+S.~Deepak, P.~Ameer, Brain tumor classification using deep {CNN} features via
+  transfer learning, Computers in Biology and Medicine 111 (2019) 103345.
+
+\bibitem{badvza2020classification}
+M.~M. Bad{\v{z}}a, M.~{\v{C}}. Barjaktarovi{\'c}, Classification of brain
+  tumors from {MRI} images using a convolutional neural network, Applied
+  Sciences 10~(6) (2020) 1999.
+
+\bibitem{swati2019brain}
+Z.~N.~K. Swati, Q.~Zhao, M.~Kabir, F.~Ali, Z.~Ali, S.~Ahmed, J.~Lu, Brain tumor
+  classification for {MR} images using transfer learning and fine-tuning,
+  Computerized Medical Imaging and Graphics 75 (2019) 34--46.
+
+\bibitem{aurna2022multiclass}
+N.~F. Aurna, M.~A. Yousuf, K.~A. Taher, A.~Azad, M.~A.~A. Momen, A
+  classification of {MRI} brain tumor based on two stage feature level ensemble
+  of deep {CNN} models, Computers in Biology and Medicine 146 (2022) 105539.
+
+\bibitem{chen2018encoder}
+L.-C. Chen, Y.~Zhu, G.~Papandreou, F.~Schroff, H.~Adam, Encoder-decoder with
+  atrous separable convolution for semantic image segmentation, Proceedings of
+  the European Conference on Computer Vision (ECCV) (2018) 801--818.
+
+\bibitem{woo2018cbam}
+S.~Woo, J.~Park, J.-Y. Lee, I.~S. Kweon, {CBAM}: Convolutional block attention
+  module, in: Proceedings of the European Conference on Computer Vision (ECCV),
+  2018, pp. 3--19.
+
+\bibitem{hu2018squeeze}
+J.~Hu, L.~Shen, G.~Sun, Squeeze-and-excitation networks, in: Proceedings of the
+  IEEE Conference on Computer Vision and Pattern Recognition, 2018, pp.
+  7132--7141.
+
+\bibitem{gal2016dropout}
+Y.~Gal, Z.~Ghahramani, Dropout as a {Bayesian} approximation: Representing
+  model uncertainty in deep learning, in: International Conference on Machine
+  Learning, PMLR, 2016, pp. 1050--1059.
+
+\bibitem{lakshminarayanan2017simple}
+B.~Lakshminarayanan, A.~Pritzel, C.~Blundell, Simple and scalable predictive
+  uncertainty estimation using deep ensembles, in: Advances in Neural
+  Information Processing Systems, Vol.~30, 2017.
+
+\bibitem{sensoy2018evidential}
+M.~Sensoy, L.~Kaplan, M.~Kandemir, Evidential deep learning to quantify
+  classification uncertainty, in: Advances in Neural Information Processing
+  Systems, Vol.~31, 2018.
+
+\bibitem{mohsen2018classification}
+H.~Mohsen, E.-S.~A. El-Dahshan, E.-S.~M. El-Horbaty, A.-B.~M. Salem,
+  Classification using deep learning neural networks for brain tumors, Future
+  Computing and Informatics Journal 3~(1) (2018) 68--71.
+
+\bibitem{rehman2020deep}
+A.~Rehman, S.~Naz, M.~I. Razzak, F.~Akram, M.~Imran, A deep learning-based
+  framework for automatic brain tumors classification using transfer learning,
+  Circuits, Systems, and Signal Processing 39~(2) (2020) 757--775.
+
+\bibitem{tan2019efficientnet}
+M.~Tan, Q.~Le, {EfficientNet}: Rethinking model scaling for convolutional
+  neural networks, in: International Conference on Machine Learning, PMLR,
+  2019, pp. 6105--6114.
+
+\bibitem{kibriya2022novel}
+H.~Kibriya, M.~Masood, M.~Nawaz, M.~Rehman, A novel and effective brain tumor
+  classification model using deep feature fusion and famous machine learning
+  classifiers, Computational Intelligence and Neuroscience 2022 (2022) 7897669.
+
+\bibitem{saeedi2023mri}
+S.~Saeedi, S.~Rezayi, H.~Keshavarz, S.~R. Niakan~Kalhori, {MRI}-based brain
+  tumor detection using convolutional deep learning methods and chosen machine
+  learning techniques, BMC Medical Informatics and Decision Making 23~(1)
+  (2023) 16.
+
+\bibitem{yu2016multi}
+F.~Yu, V.~Koltun, Multi-scale context aggregation by dilated convolutions,
+  arXiv preprint arXiv:1511.07122 (2016).
+
+\bibitem{lin2017feature}
+T.-Y. Lin, P.~Doll{\'a}r, R.~Girshick, K.~He, B.~Hariharan, S.~Belongie,
+  Feature pyramid networks for object detection, in: Proceedings of the IEEE
+  Conference on Computer Vision and Pattern Recognition, 2017, pp. 2117--2125.
+
+\bibitem{oktay2018attention}
+O.~Oktay, J.~Schlemper, L.~L. Folgoc, M.~Lee, M.~Heinrich, K.~Misawa, K.~Mori,
+  S.~McDonagh, N.~Y. Hammerla, B.~Kainz, et~al., Attention {U-Net}: Learning
+  where to look for the pancreas, arXiv preprint arXiv:1804.03999 (2018).
+
+\bibitem{neal2012bayesian}
+R.~M. Neal, Bayesian learning for neural networks, Vol. 118, Springer Science
+  \& Business Media, 2012.
+
+\bibitem{leibig2017leveraging}
+C.~Leibig, V.~Allken, M.~S. Ayhan, P.~Berens, S.~Wahl, Leveraging uncertainty
+  estimates for predicting segmentation quality, arXiv preprint
+  arXiv:1709.06116 (2017).
+
+\bibitem{msoud_nickparvar_2021}
+M.~Nickparvar, Brain tumor {MRI} dataset,
+  \url{https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset},
+  accessed: 2024-01-15 (2021).
+
+\bibitem{cheng2017figshare}
+J.~Cheng, W.~Huang, S.~Cao, R.~Yang, W.~Yang, Z.~Yun, Z.~Wang, Q.~Feng,
+  Enhanced performance of brain tumor classification via tumor region
+  augmentation and partition, PloS One 10~(10) (2015) e0140381.
+
+\bibitem{pmram2024}
+M.~M. Rahman, M.~S.~M. Prottoy, M.~Chowdhury, R.~Rahman, A.~U. Tamim, {PMRAM}:
+  {B}angladeshi brain cancer - {MRI} dataset, Mendeley Data, V1, data collected
+  from Ibn Sina Medical College, Dhaka Medical College, and Cumilla Medical
+  College, Bangladesh (2024).
+\newblock \href {https://doi.org/10.17632/m7w55sw88b.1}
+  {\path{doi:10.17632/m7w55sw88b.1}}.
+
+\bibitem{lin2017focal}
+T.-Y. Lin, P.~Goyal, R.~Girshick, K.~He, P.~Doll{\'a}r, Focal loss for dense
+  object detection, in: Proceedings of the IEEE International Conference on
+  Computer Vision, 2017, pp. 2980--2988.
+
+\bibitem{van2021artificial}
+K.~G. van Leeuwen, S.~Schalekamp, M.~J. Rutten, P.~Snoeren, M.~de~Rooij, J.~J.
+  Gommers, C.~M. Schaefer-Prokop, Artificial intelligence in radiology: 100
+  commercially available products and their scientific evidence, European
+  Radiology 31~(6) (2021) 3797--3804.
+
+\bibitem{selvaraju2017grad}
+R.~R. Selvaraju, M.~Cogswell, A.~Das, R.~Vedantam, D.~Parikh, D.~Batra,
+  {Grad-CAM}: Visual explanations from deep networks via gradient-based
+  localization, in: Proceedings of the IEEE International Conference on
+  Computer Vision, 2017, pp. 618--626.
+
+\bibitem{landis1977measurement}
+J.~R. Landis, G.~G. Koch, The measurement of observer agreement for categorical
+  data, Biometrics (1977) 159--174.
+
+\end{thebibliography}

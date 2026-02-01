@@ -1,0 +1,15 @@
+
+\begin{table}[ht]
+\centering
+\caption{Cross-dataset validation results. HSANet trained on Kaggle Brain Tumor MRI dataset and evaluated on external datasets without any fine-tuning.}
+\label{tab:cross_validation}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Dataset} & \textbf{Samples} & \textbf{Accuracy (\%)} & \textbf{F1 (\%)} & \textbf{AUC-ROC} & \textbf{ECE} & \textbf{$\kappa$} \\
+\midrule
+Kaggle_Original & 1311 & 99.77 & 99.75 & 1.0000 & 0.0190 & 0.9969 \\
+Figshare_External & 3064 & 99.90 & 99.88 & N/A & 0.0183 & 0.9985 \\
+
+\bottomrule
+\end{tabular}
+\end{table}

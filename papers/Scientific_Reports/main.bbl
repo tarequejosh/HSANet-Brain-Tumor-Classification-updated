@@ -1,0 +1,249 @@
+\begin{thebibliography}{10}
+\urlstyle{rm}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname doiprefix\endcsname\relax\def\doiprefix{DOI: }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{sung2021global}
+\bibinfo{author}{Sung, H.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Global cancer statistics 2020:
+  {GLOBOCAN} estimates of incidence and mortality worldwide for 36 cancers in
+  185 countries}}.
+\newblock {\emph{\JournalTitle{CA: A Cancer Journal for Clinicians}}}
+  \textbf{\bibinfo{volume}{71}}, \bibinfo{pages}{209--249},
+  \doiprefix\url{10.3322/caac.21660} (\bibinfo{year}{2021}).
+
+\bibitem{louis2021who}
+\bibinfo{author}{Louis, D.~N.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{The 2021 {WHO} classification of
+  tumors of the central nervous system: a summary}}.
+\newblock {\emph{\JournalTitle{Neuro-Oncology}}} \textbf{\bibinfo{volume}{23}},
+  \bibinfo{pages}{1231--1251}, \doiprefix\url{10.1093/neuonc/noab106}
+  (\bibinfo{year}{2021}).
+
+\bibitem{ostrom2021cbtrus}
+\bibinfo{author}{Ostrom, Q.~T.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{{CBTRUS} statistical report:
+  primary brain and other central nervous system tumors diagnosed in the
+  {United States} in 2013--2017}}.
+\newblock {\emph{\JournalTitle{Neuro-Oncology}}} \textbf{\bibinfo{volume}{22}},
+  \bibinfo{pages}{iv1--iv96}, \doiprefix\url{10.1093/neuonc/noaa200}
+  (\bibinfo{year}{2021}).
+
+\bibitem{pope2018brain}
+\bibinfo{author}{Pope, W.~B.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Brain metastases: neuroimaging}}.
+\newblock {\emph{\JournalTitle{Handbook of Clinical Neurology}}}
+  \textbf{\bibinfo{volume}{149}}, \bibinfo{pages}{89--112},
+  \doiprefix\url{10.1016/B978-0-12-811161-1.00007-4} (\bibinfo{year}{2018}).
+
+\bibitem{rimmer2017radiologist}
+\bibinfo{author}{Rimmer, A.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Radiologist shortage leaves patient
+  care at risk, warns royal college}}.
+\newblock {\emph{\JournalTitle{BMJ}}} \textbf{\bibinfo{volume}{359}},
+  \bibinfo{pages}{j4683}, \doiprefix\url{10.1136/bmj.j4683}
+  (\bibinfo{year}{2017}).
+
+\bibitem{bruno2015understanding}
+\bibinfo{author}{Bruno, M.~A.}, \bibinfo{author}{Walker, E.~A.} \&
+  \bibinfo{author}{Abujudeh, H.~H.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Understanding and confronting our
+  mistakes: the epidemiology of error in radiology and strategies for error
+  reduction}}.
+\newblock {\emph{\JournalTitle{RadioGraphics}}} \textbf{\bibinfo{volume}{35}},
+  \bibinfo{pages}{1668--1676}, \doiprefix\url{10.1148/rg.2015150023}
+  (\bibinfo{year}{2015}).
+
+\bibitem{krizhevsky2012imagenet}
+\bibinfo{author}{Krizhevsky, A.}, \bibinfo{author}{Sutskever, I.} \&
+  \bibinfo{author}{Hinton, G.~E.}
+\newblock \bibinfo{title}{{ImageNet} classification with deep convolutional
+  neural networks}.
+\newblock In \emph{\bibinfo{booktitle}{Advances in Neural Information
+  Processing Systems}}, vol.~\bibinfo{volume}{25}, \bibinfo{pages}{1097--1105}
+  (\bibinfo{year}{2012}).
+
+\bibitem{raghu2019transfusion}
+\bibinfo{author}{Raghu, M.}, \bibinfo{author}{Zhang, C.},
+  \bibinfo{author}{Kleinberg, J.} \& \bibinfo{author}{Bengio, S.}
+\newblock \bibinfo{title}{Transfusion: Understanding transfer learning for
+  medical imaging}.
+\newblock In \emph{\bibinfo{booktitle}{Advances in Neural Information
+  Processing Systems}}, vol.~\bibinfo{volume}{32} (\bibinfo{year}{2019}).
+
+\bibitem{deepak2019brain}
+\bibinfo{author}{Deepak, S.} \& \bibinfo{author}{Ameer, P.~M.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Brain tumor classification using
+  deep {CNN} features via transfer learning}}.
+\newblock {\emph{\JournalTitle{Computers in Biology and Medicine}}}
+  \textbf{\bibinfo{volume}{111}}, \bibinfo{pages}{103345},
+  \doiprefix\url{10.1016/j.compbiomed.2019.103345} (\bibinfo{year}{2019}).
+
+\bibitem{badvza2020classification}
+\bibinfo{author}{Bad{\v{z}}a, M.~M.} \& \bibinfo{author}{Barjaktarovi{\'c},
+  M.~{\v{C}}.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Classification of brain tumors from
+  {MRI} images using a convolutional neural network}}.
+\newblock {\emph{\JournalTitle{Applied Sciences}}}
+  \textbf{\bibinfo{volume}{10}}, \bibinfo{pages}{1999},
+  \doiprefix\url{10.3390/app10061999} (\bibinfo{year}{2020}).
+
+\bibitem{swati2019brain}
+\bibinfo{author}{Swati, Z. N.~K.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Brain tumor classification for {MR}
+  images using transfer learning and fine-tuning}}.
+\newblock {\emph{\JournalTitle{Computerized Medical Imaging and Graphics}}}
+  \textbf{\bibinfo{volume}{75}}, \bibinfo{pages}{34--46},
+  \doiprefix\url{10.1016/j.compmedimag.2019.05.001} (\bibinfo{year}{2019}).
+
+\bibitem{aurna2022multiclass}
+\bibinfo{author}{Aurna, N.~F.}, \bibinfo{author}{Yousuf, M.~A.},
+  \bibinfo{author}{Taher, K.~A.}, \bibinfo{author}{Azad, A. K.~M.} \&
+  \bibinfo{author}{Moni, M.~A.}
+\newblock \bibinfo{journal}{\bibinfo{title}{A classification of {MRI} brain
+  tumor images using hybrid deep learning approach}}.
+\newblock {\emph{\JournalTitle{Electronics}}} \textbf{\bibinfo{volume}{11}},
+  \bibinfo{pages}{573}, \doiprefix\url{10.3390/electronics11040573}
+  (\bibinfo{year}{2022}).
+
+\bibitem{dosovitskiy2021image}
+\bibinfo{author}{Dosovitskiy, A.} \emph{et~al.}
+\newblock \bibinfo{title}{An image is worth 16x16 words: Transformers for image
+  recognition at scale}.
+\newblock In \emph{\bibinfo{booktitle}{International Conference on Learning
+  Representations}} (\bibinfo{year}{2021}).
+
+\bibitem{woo2018cbam}
+\bibinfo{author}{Woo, S.}, \bibinfo{author}{Park, J.}, \bibinfo{author}{Lee,
+  J.~Y.} \& \bibinfo{author}{Kweon, I.~S.}
+\newblock \bibinfo{title}{{CBAM}: Convolutional block attention module}.
+\newblock In \emph{\bibinfo{booktitle}{Proceedings of the European Conference
+  on Computer Vision}}, \bibinfo{pages}{3--19},
+  \doiprefix\url{10.1007/978-3-030-01234-2_1} (\bibinfo{year}{2018}).
+
+\bibitem{chen2018encoder}
+\bibinfo{author}{Chen, L.~C.}, \bibinfo{author}{Zhu, Y.},
+  \bibinfo{author}{Papandreou, G.}, \bibinfo{author}{Schroff, F.} \&
+  \bibinfo{author}{Adam, H.}
+\newblock \bibinfo{title}{Encoder-decoder with atrous separable convolution for
+  semantic image segmentation}.
+\newblock In \emph{\bibinfo{booktitle}{Proceedings of the European Conference
+  on Computer Vision}}, \bibinfo{pages}{801--818},
+  \doiprefix\url{10.1007/978-3-030-01234-2_49} (\bibinfo{year}{2018}).
+
+\bibitem{hu2018squeeze}
+\bibinfo{author}{Hu, J.}, \bibinfo{author}{Shen, L.} \& \bibinfo{author}{Sun,
+  G.}
+\newblock \bibinfo{title}{Squeeze-and-excitation networks}.
+\newblock In \emph{\bibinfo{booktitle}{Proceedings of the IEEE Conference on
+  Computer Vision and Pattern Recognition}}, \bibinfo{pages}{7132--7141},
+  \doiprefix\url{10.1109/CVPR.2018.00745} (\bibinfo{year}{2018}).
+
+\bibitem{sensoy2018evidential}
+\bibinfo{author}{Sensoy, M.}, \bibinfo{author}{Kaplan, L.} \&
+  \bibinfo{author}{Kandemir, M.}
+\newblock \bibinfo{title}{Evidential deep learning to quantify classification
+  uncertainty}.
+\newblock In \emph{\bibinfo{booktitle}{Advances in Neural Information
+  Processing Systems}}, vol.~\bibinfo{volume}{31} (\bibinfo{year}{2018}).
+
+\bibitem{landis1977measurement}
+\bibinfo{author}{Landis, J.~R.} \& \bibinfo{author}{Koch, G.~G.}
+\newblock \bibinfo{journal}{\bibinfo{title}{The measurement of observer
+  agreement for categorical data}}.
+\newblock {\emph{\JournalTitle{Biometrics}}} \textbf{\bibinfo{volume}{33}},
+  \bibinfo{pages}{159--174}, \doiprefix\url{10.2307/2529310}
+  (\bibinfo{year}{1977}).
+
+\bibitem{selvaraju2017grad}
+\bibinfo{author}{Selvaraju, R.~R.} \emph{et~al.}
+\newblock \bibinfo{title}{Grad-{CAM}: Visual explanations from deep networks
+  via gradient-based localization}.
+\newblock In \emph{\bibinfo{booktitle}{Proceedings of the IEEE International
+  Conference on Computer Vision}}, \bibinfo{pages}{618--626},
+  \doiprefix\url{10.1109/ICCV.2017.74} (\bibinfo{year}{2017}).
+
+\bibitem{rehman2020deep}
+\bibinfo{author}{Rehman, A.}, \bibinfo{author}{Naz, S.},
+  \bibinfo{author}{Razzak, M.~I.}, \bibinfo{author}{Akram, F.} \&
+  \bibinfo{author}{Imran, M.}
+\newblock \bibinfo{journal}{\bibinfo{title}{A deep learning-based framework for
+  automatic brain tumors classification using transfer learning}}.
+\newblock {\emph{\JournalTitle{Circuits, Systems, and Signal Processing}}}
+  \textbf{\bibinfo{volume}{39}}, \bibinfo{pages}{757--775},
+  \doiprefix\url{10.1007/s00034-019-01246-3} (\bibinfo{year}{2020}).
+
+\bibitem{kibriya2022novel}
+\bibinfo{author}{Kibriya, H.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{A novel and effective brain tumor
+  classification model using deep feature fusion and famous machine learning
+  classifiers}}.
+\newblock {\emph{\JournalTitle{Computational Intelligence and Neuroscience}}}
+  \textbf{\bibinfo{volume}{2022}}, \bibinfo{pages}{7897669},
+  \doiprefix\url{10.1155/2022/7897669} (\bibinfo{year}{2022}).
+
+\bibitem{saeedi2023mri}
+\bibinfo{author}{Saeedi, S.}, \bibinfo{author}{Rezayi, S.},
+  \bibinfo{author}{Keshavarz, H.} \& \bibinfo{author}{Niakan~Kalhori, S.~R.}
+\newblock \bibinfo{journal}{\bibinfo{title}{{MRI}-based brain tumor detection
+  using convolutional deep learning methods and chosen machine learning
+  techniques}}.
+\newblock {\emph{\JournalTitle{BMC Medical Informatics and Decision Making}}}
+  \textbf{\bibinfo{volume}{23}}, \bibinfo{pages}{16},
+  \doiprefix\url{10.1186/s12911-023-02114-6} (\bibinfo{year}{2023}).
+
+\bibitem{tandel2024multiclass}
+\bibinfo{author}{Tandel, G.~S.}, \bibinfo{author}{Tiwari, A.} \&
+  \bibinfo{author}{Kakde, O.~G.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Performance optimisation of deep
+  learning models using majority voting algorithm for brain tumour
+  classification}}.
+\newblock {\emph{\JournalTitle{Computers in Biology and Medicine}}}
+  \textbf{\bibinfo{volume}{169}}, \bibinfo{pages}{107899},
+  \doiprefix\url{10.1016/j.compbiomed.2024.107899} (\bibinfo{year}{2024}).
+
+\bibitem{van2021artificial}
+\bibinfo{author}{van Leeuwen, K.~G.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Artificial intelligence in
+  radiology: 100 commercially available products and their scientific
+  evidence}}.
+\newblock {\emph{\JournalTitle{European Radiology}}}
+  \textbf{\bibinfo{volume}{31}}, \bibinfo{pages}{3797--3809},
+  \doiprefix\url{10.1007/s00330-021-07892-z} (\bibinfo{year}{2021}).
+
+\bibitem{msoud_nickparvar_2021}
+\bibinfo{author}{Nickparvar, M.}
+\newblock \bibinfo{title}{Brain tumor {MRI} dataset}.
+\newblock \bibinfo{howpublished}{\emph{Kaggle}
+  \url{https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset}}
+  (\bibinfo{year}{2021}).
+
+\bibitem{tan2019efficientnet}
+\bibinfo{author}{Tan, M.} \& \bibinfo{author}{Le, Q.}
+\newblock \bibinfo{title}{{EfficientNet}: Rethinking model scaling for
+  convolutional neural networks}.
+\newblock In \emph{\bibinfo{booktitle}{Proceedings of the International
+  Conference on Machine Learning}}, \bibinfo{pages}{6105--6114}
+  (\bibinfo{year}{2019}).
+
+\bibitem{lin2017focal}
+\bibinfo{author}{Lin, T.~Y.}, \bibinfo{author}{Goyal, P.},
+  \bibinfo{author}{Girshick, R.}, \bibinfo{author}{He, K.} \&
+  \bibinfo{author}{Doll{\'a}r, P.}
+\newblock \bibinfo{title}{Focal loss for dense object detection}.
+\newblock In \emph{\bibinfo{booktitle}{Proceedings of the IEEE International
+  Conference on Computer Vision}}, \bibinfo{pages}{2980--2988},
+  \doiprefix\url{10.1109/ICCV.2017.324} (\bibinfo{year}{2017}).
+
+\bibitem{loshchilov2017decoupled}
+\bibinfo{author}{Loshchilov, I.} \& \bibinfo{author}{Hutter, F.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Decoupled weight decay
+  regularization}}.
+\newblock {\emph{\JournalTitle{arXiv preprint arXiv:1711.05101}}}
+  (\bibinfo{year}{2017}).
+
+\end{thebibliography}

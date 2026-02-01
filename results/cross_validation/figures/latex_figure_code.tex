@@ -1,0 +1,53 @@
+
+%% ============================================================
+%% LaTeX Figure Code for Cross-Dataset Validation Section
+%% Copy these to your paper
+%% ============================================================
+
+%% Figure: Performance Comparison
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/cross_validation/fig1_performance_comparison.pdf}
+\caption{Cross-dataset performance comparison. (a) Classification accuracy, (b) Macro F1-score, and (c) Cohen's kappa coefficient for both datasets. HSANet maintains excellent performance on the external Figshare dataset without any fine-tuning, demonstrating robust cross-domain generalization.}
+\label{fig:cross_performance}
+\end{figure}
+
+%% Figure: Confusion Matrices
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/cross_validation/fig2_confusion_matrices.pdf}
+\caption{Confusion matrices for cross-dataset evaluation. (a) Kaggle original test set (4 classes, 1,311 samples) showing 3 misclassifications. (b) Figshare external dataset (3 classes, 3,064 samples) showing 3 misclassifications. Note that Figshare does not include healthy control samples.}
+\label{fig:cross_confusion}
+\end{figure}
+
+%% Figure: Calibration and Uncertainty
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/cross_validation/fig3_calibration_uncertainty.pdf}
+\caption{Model calibration and uncertainty quantification. (a) Expected Calibration Error (ECE) comparison showing well-calibrated predictions on both datasets (ECE < 0.02). (b) Uncertainty separation demonstrating that misclassified samples exhibit significantly higher uncertainty scores, confirming the reliability of uncertainty estimates across domains (***p < 0.01, Mann-Whitney U test).}
+\label{fig:cross_calibration}
+\end{figure}
+
+%% Figure: Per-class Performance
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/cross_validation/fig4_per_class_f1.pdf}
+\caption{Per-class F1-scores for cross-dataset evaluation. (a) Kaggle original dataset with all four classes achieving F1-scores above 99.5\%. (b) Figshare external dataset (three tumor classes) with similarly high per-class performance, demonstrating consistent classification quality across tumor types.}
+\label{fig:cross_perclass}
+\end{figure}
+
+%% Figure: Radar Comparison
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\textwidth]{figures/cross_validation/fig7_radar_comparison.pdf}
+\caption{Radar chart comparison of multiple evaluation metrics between datasets. Near-identical performance profiles confirm robust model generalization across different data distributions.}
+\label{fig:cross_radar}
+\end{figure}
+
+%% Figure: Sample Images
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/cross_validation/fig6_sample_images.pdf}
+\caption{Representative MRI samples from both datasets. Top row: Kaggle original dataset with all four classes. Bottom row: Figshare external dataset (note: no healthy control class). Despite visual differences in acquisition protocols, HSANet successfully generalizes across both data sources.}
+\label{fig:cross_samples}
+\end{figure}

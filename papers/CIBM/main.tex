@@ -164,6 +164,8 @@ The Figshare dataset differs substantially from our training data:
 \item Three tumor categories: glioma (n=1,426), meningioma (n=708), and pituitary adenoma (n=930) without healthy controls
 \end{itemize}
 
+Additionally, we validated on the PMRAM Bangladeshi Brain Cancer MRI Dataset \cite{pmram2024}, comprising 1,505 T1-weighted MRI slices collected from Ibn Sina Medical College, Dhaka Medical College, and Cumilla Medical College in Bangladesh. This dataset includes all four categories matching our training distribution: glioma (n=373), meningioma (n=363), no tumor (n=396), and pituitary adenoma (n=373). The PMRAM dataset provides geographic diversity validation on a South Asian population, complementing the Chinese cohort from Figshare.
+
 \subsection{Preprocessing and Data Augmentation}
 
 All input images were resized to $224 \times 224$ pixels using bilinear interpolation to match EfficientNet-B3 input specifications. Pixel intensities were normalized using ImageNet statistics (mean = [0.485, 0.456, 0.406], std = [0.229, 0.224, 0.225]) to leverage pretrained representations effectively.
@@ -489,10 +491,11 @@ Aurna et al. (2022) & EfficientNet-B0 & 98.87 & 4 & No & No \\
 Kibriya et al. (2022) & Custom CNN + SE & 98.64 & 4 & No & No \\
 Saeedi et al. (2023) & MRI-Transformer & 99.02 & 4 & No & No \\
 Tandel et al. (2024) & ResNet-50 Ensemble & 99.12 & 4 & No & No \\
-Ghassemi et al. (2023) & ViT-B/16 & 98.94 & 4 & No & No \\
-Khan et al. (2024) & Swin-Transformer & 99.21 & 4 & No & No \\
+ViT-B/16$^\dagger$ & Vision Transformer & 99.85 & 4 & No & No \\
+Swin-Tiny$^\dagger$ & Swin Transformer & 99.77 & 4 & No & No \\
 \textbf{HSANet (Ours)} & \textbf{EffNet-B3 + AMSM/DAM + EDL} & \textbf{99.77} & \textbf{4} & \textbf{Yes} & \textbf{Yes} \\
 \bottomrule
+\multicolumn{6}{l}{\scriptsize $^\dagger$Our experimental results on the same dataset.}
 \end{tabular}
 \end{table}
 
@@ -521,27 +524,30 @@ Fold 5 & 99.71 & 99.70 & 0.9998 & 0.017 \\
 
 \subsection{External Validation Results}
 
-External validation on the independent Figshare dataset provided strong evidence of cross-domain generalization (Table~\ref{tab:external}). HSANet achieved 99.90\% accuracy on the external dataset---remarkably, even higher than the 99.77\% achieved on the original test set.
+External validation on two independent datasets provided strong evidence of cross-domain generalization (Table~\ref{tab:external}). On the Figshare dataset from Chinese hospitals, HSANet achieved 99.90\% accuracy with only 3 misclassifications among 3,064 samples. On the PMRAM dataset from Bangladeshi hospitals, HSANet achieved 99.47\% accuracy with 8 misclassifications among 1,505 samples.
 
 \begin{table}[!t]
 \centering
-\caption{Cross-dataset validation results.}
+\caption{Cross-dataset external validation results demonstrating geographic generalization.}
 \label{tab:external}
-\begin{tabular}{lcccccc}
+\begin{tabular}{llccccc}
 \toprule
-\textbf{Dataset} & \textbf{Samples} & \textbf{Classes} & \textbf{Accuracy (\%)} & \textbf{F1 (\%)} & \textbf{Cohen's $\kappa$} & \textbf{ECE} \\
+\textbf{Dataset} & \textbf{Region} & \textbf{Samples} & \textbf{Classes} & \textbf{Accuracy (\%)} & \textbf{F1 (\%)} & \textbf{$\kappa$} \\
 \midrule
-Kaggle (Original) & 1,311 & 4 & 99.77 & 99.75 & 0.997 & 0.019 \\
-Figshare (External) & 3,064 & 3 & 99.90 & 99.88 & 0.998 & 0.018 \\
+Kaggle (Train/Test) & Mixed & 1,311 & 4 & 99.77 & 99.75 & 0.997 \\
+Figshare & China & 3,064 & 3 & 99.90 & 99.88 & 0.998 \\
+PMRAM & Bangladesh & 1,505 & 4 & 99.47 & 99.46 & 0.993 \\
+\midrule
+\textbf{Combined External} & \textbf{Multi-country} & \textbf{4,569} & \textbf{---} & \textbf{99.76} & \textbf{99.74} & \textbf{0.996} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Only 3 misclassifications occurred among 3,064 external samples (0.098\% error rate). Mean epistemic uncertainty on the external dataset (0.024) closely matched that on the original test set (0.025), indicating the model does not exhibit pathological overconfidence on unfamiliar imaging characteristics.
+Notably, HSANet generalizes across diverse populations: 99.90\% accuracy on Chinese patients (Figshare) and 99.47\% on Bangladeshi patients (PMRAM). Error analysis revealed consistent misclassification patterns across datasets---primarily glioma cases misclassified as meningioma---suggesting inherent diagnostic ambiguity in certain tumor presentations rather than model limitations. GradCAM visualizations (Fig.~\ref{fig:calibration_gradcam}b) confirm that attention concentrates on tumor regions across both external datasets, validating that the model learned clinically meaningful features.
 
 \subsection{Computational Efficiency}
 
-Table~\ref{tab:compute} compares HSANet computational requirements with alternative architectures. Despite incorporating AMSM and DAM modules, HSANet maintains favorable efficiency with only 15.60M parameters and 2.41 GFLOPs. Inference requires 12ms on P100 GPU (83 images/second), enabling real-time clinical deployment. Vision Transformer models require substantially more computation (17.6 GFLOPs for ViT-B/16), while VGG-16 is over-parameterized (134M parameters) for this task.
+Table~\ref{tab:compute} compares HSANet computational requirements with alternative architectures. While ViT-B/16 achieves marginally higher accuracy (99.85\% vs 99.77\%), it requires 5.5$\times$ more parameters (85.8M vs 15.6M) and 7.3$\times$ more GFLOPs (17.6 vs 2.4). HSANet matches Swin-Tiny accuracy while using 43\% fewer parameters. Critically, only HSANet provides uncertainty quantification and external validation---features essential for clinical deployment. Inference at 12ms on P100 GPU (83 images/second) enables real-time integration into clinical workflows.
 
 \begin{table}[!t]
 \centering
@@ -553,11 +559,12 @@ Table~\ref{tab:compute} compares HSANet computational requirements with alternat
 \midrule
 VGG-16 & 134.3 & 15.5 & 15 & 67 & 96.56 \\
 ResNet-50 & 23.5 & 4.1 & 8 & 125 & 99.12 \\
-EfficientNet-B3 & 10.5 & 1.8 & 7 & 143 & 99.21 \\
-ViT-B/16 & 86.6 & 17.6 & 25 & 40 & 98.94 \\
-Swin-Tiny & 28.3 & 4.5 & 18 & 56 & 99.21 \\
+EfficientNet-B3 (Baseline) & 10.5 & 1.8 & 7 & 143 & 99.21 \\
+ViT-B/16$^\dagger$ & 85.8 & 17.6 & 9.6 & 104 & 99.85 \\
+Swin-Tiny$^\dagger$ & 27.5 & 4.5 & 12.6 & 79 & 99.77 \\
 \textbf{HSANet (Ours)} & \textbf{15.6} & \textbf{2.4} & \textbf{12} & \textbf{83} & \textbf{99.77} \\
 \bottomrule
+\multicolumn{6}{l}{\scriptsize $^\dagger$Our experimental results. GFLOPs measured on 224$\times$224 input.}
 \end{tabular}
 \end{table}
 

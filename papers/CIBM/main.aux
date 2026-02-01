@@ -4,17 +4,17 @@
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \emailauthor{assaduzzaman.cse@diu.edu.bd}{Md.~Assaduzzaman\corref {cor1}}
 \emailauthor{tarequecs@gmail.com}{Md.~Tareque Jamil Josh}
-\Newlabel{diu}{a}
 \Newlabel{cor1}{1}
+\Newlabel{diu}{a}
 \citation{sung2021global}
 \citation{louis2021who}
 \citation{ostrom2021cbtrus}
 \citation{pope2018brain}
 \citation{rimmer2017radiologist}
 \citation{bruno2015understanding}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
 \citation{krizhevsky2012imagenet,raghu2019transfusion}
 \citation{deepak2019brain,badvza2020classification,swati2019brain,aurna2022multiclass}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
 \citation{chen2018encoder}
 \citation{woo2018cbam}
 \citation{hu2018squeeze}
@@ -35,82 +35,88 @@
 \citation{lin2017feature}
 \citation{oktay2018attention}
 \citation{chen2018encoder}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{4}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Deep Learning for Brain Tumor Classification}{4}{subsection.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Multi-Scale Feature Extraction}{4}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{5}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Deep Learning for Brain Tumor Classification}{5}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Multi-Scale Feature Extraction}{5}{subsection.2.2}\protected@file@percent }
 \citation{neal2012bayesian}
 \citation{gal2016dropout}
 \citation{lakshminarayanan2017simple}
 \citation{sensoy2018evidential}
 \citation{leibig2017leveraging}
 \citation{msoud_nickparvar_2021}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Uncertainty Quantification in Deep Learning}{5}{subsection.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Materials and Methods}{5}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset Description}{5}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Uncertainty Quantification in Deep Learning}{6}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Materials and Methods}{6}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset Description}{6}{subsection.3.1}\protected@file@percent }
 \citation{aurna2022multiclass,saeedi2023mri}
 \citation{cheng2017figshare}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}External Validation Dataset}{7}{subsection.3.2}\protected@file@percent }
 \citation{pmram2024}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}External Validation Dataset}{6}{subsection.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Preprocessing and Data Augmentation}{6}{subsection.3.3}\protected@file@percent }
-\citation{tan2019efficientnet}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Network Architecture}{7}{subsection.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Overview}{7}{subsubsection.3.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Feature Extraction Backbone}{7}{subsubsection.3.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Adaptive Multi-Scale Module (AMSM)}{7}{subsubsection.3.4.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Overall HSANet architecture. Input MRI images (224$\times $224$\times $3) are processed through the EfficientNet-B3 backbone, with features extracted at three spatial resolutions (stages 3, 5, 7). Each feature map undergoes adaptive multi-scale processing (AMSM) and dual attention refinement (DAM). Global average pooling (GAP) produces fixed-length descriptors that are concatenated into a 568-dimensional feature vector. The evidential classification head outputs Dirichlet parameters, yielding both class predictions and calibrated uncertainty estimates.}}{8}{figure.caption.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Sample MRI images from each tumor category and healthy controls across both the training dataset (Kaggle) and external validation dataset (Figshare). Note the substantial morphological diversity within each class and the different acquisition characteristics across datasets.}}{8}{figure.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:architecture}{{1}{8}{Overall HSANet architecture. Input MRI images (224$\times $224$\times $3) are processed through the EfficientNet-B3 backbone, with features extracted at three spatial resolutions (stages 3, 5, 7). Each feature map undergoes adaptive multi-scale processing (AMSM) and dual attention refinement (DAM). Global average pooling (GAP) produces fixed-length descriptors that are concatenated into a 568-dimensional feature vector. The evidential classification head outputs Dirichlet parameters, yielding both class predictions and calibrated uncertainty estimates}{figure.caption.1}{}}
+\newlabel{fig:sample_mri}{{1}{8}{Sample MRI images from each tumor category and healthy controls across both the training dataset (Kaggle) and external validation dataset (Figshare). Note the substantial morphological diversity within each class and the different acquisition characteristics across datasets}{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Preprocessing and Data Augmentation}{8}{subsection.3.3}\protected@file@percent }
+\citation{tan2019efficientnet}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Network Architecture}{9}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Overview}{9}{subsubsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Feature Extraction Backbone}{9}{subsubsection.3.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Overall HSANet architecture. Input MRI images (224$\times $224$\times $3) are processed through the EfficientNet-B3 backbone, with features extracted at three spatial resolutions (stages 3, 5, 7). Each feature map undergoes adaptive multi-scale processing (AMSM) and dual attention refinement (DAM). Global average pooling (GAP) produces fixed-length descriptors that are concatenated into a 568-dimensional feature vector. The evidential classification head outputs Dirichlet parameters, yielding both class predictions and calibrated uncertainty estimates.}}{10}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:architecture}{{2}{10}{Overall HSANet architecture. Input MRI images (224$\times $224$\times $3) are processed through the EfficientNet-B3 backbone, with features extracted at three spatial resolutions (stages 3, 5, 7). Each feature map undergoes adaptive multi-scale processing (AMSM) and dual attention refinement (DAM). Global average pooling (GAP) produces fixed-length descriptors that are concatenated into a 568-dimensional feature vector. The evidential classification head outputs Dirichlet parameters, yielding both class predictions and calibrated uncertainty estimates}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Adaptive Multi-Scale Module (AMSM)}{10}{subsubsection.3.4.3}\protected@file@percent }
 \citation{woo2018cbam}
 \citation{sensoy2018evidential}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.4}Dual Attention Module (DAM)}{9}{subsubsection.3.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.5}Evidential Classification Head}{9}{subsubsection.3.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.4}Dual Attention Module (DAM)}{11}{subsubsection.3.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Detailed architecture of proposed modules. (a) Adaptive Multi-Scale Module (AMSM): Parallel dilated convolutions with dilation rates $d \in \{1, 2, 4\}$ capture features at effective receptive fields of 3$\times $3, 5$\times $5, and 9$\times $9. Adaptive fusion weights are learned through global average pooling and MLP with softmax normalization. A residual connection preserves the original features. (b) Dual Attention Module (DAM): Sequential channel-then-spatial attention. Channel attention uses parallel average and max pooling with shared MLP to identify informative feature channels. Spatial attention applies 7$\times $7 convolution on pooled features to highlight tumor-relevant regions.}}{12}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:amsm_dam}{{3}{12}{Detailed architecture of proposed modules. (a) Adaptive Multi-Scale Module (AMSM): Parallel dilated convolutions with dilation rates $d \in \{1, 2, 4\}$ capture features at effective receptive fields of 3$\times $3, 5$\times $5, and 9$\times $9. Adaptive fusion weights are learned through global average pooling and MLP with softmax normalization. A residual connection preserves the original features. (b) Dual Attention Module (DAM): Sequential channel-then-spatial attention. Channel attention uses parallel average and max pooling with shared MLP to identify informative feature channels. Spatial attention applies 7$\times $7 convolution on pooled features to highlight tumor-relevant regions}{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.5}Evidential Classification Head}{12}{subsubsection.3.4.5}\protected@file@percent }
 \citation{lin2017focal}
 \citation{van2021artificial}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Detailed architecture of proposed modules. (a) Adaptive Multi-Scale Module (AMSM): Parallel dilated convolutions with dilation rates $d \in \{1, 2, 4\}$ capture features at effective receptive fields of 3$\times $3, 5$\times $5, and 9$\times $9. Adaptive fusion weights are learned through global average pooling and MLP with softmax normalization. A residual connection preserves the original features. (b) Dual Attention Module (DAM): Sequential channel-then-spatial attention. Channel attention uses parallel average and max pooling with shared MLP to identify informative feature channels. Spatial attention applies 7$\times $7 convolution on pooled features to highlight tumor-relevant regions.}}{10}{figure.caption.2}\protected@file@percent }
-\newlabel{fig:amsm_dam}{{2}{10}{Detailed architecture of proposed modules. (a) Adaptive Multi-Scale Module (AMSM): Parallel dilated convolutions with dilation rates $d \in \{1, 2, 4\}$ capture features at effective receptive fields of 3$\times $3, 5$\times $5, and 9$\times $9. Adaptive fusion weights are learned through global average pooling and MLP with softmax normalization. A residual connection preserves the original features. (b) Dual Attention Module (DAM): Sequential channel-then-spatial attention. Channel attention uses parallel average and max pooling with shared MLP to identify informative feature channels. Spatial attention applies 7$\times $7 convolution on pooled features to highlight tumor-relevant regions}{figure.caption.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Training Procedure}{10}{subsection.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}Loss Function}{10}{subsubsection.3.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Training Procedure}{13}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}Loss Function}{13}{subsubsection.3.5.1}\protected@file@percent }
 \citation{selvaraju2017grad}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}Optimization}{11}{subsubsection.3.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.3}Implementation Details}{11}{subsubsection.3.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Evaluation Metrics}{11}{subsection.3.6}\protected@file@percent }
 \citation{landis1977measurement}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Per-class classification performance on held-out test set (n = 1,311).}}{12}{table.caption.3}\protected@file@percent }
-\newlabel{tab:main_results}{{1}{12}{Per-class classification performance on held-out test set (n = 1,311)}{table.caption.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{12}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Classification Performance}{12}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Model Calibration and Uncertainty Quantification}{12}{subsection.4.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Classification performance analysis. (a) Receiver operating characteristic curves demonstrating near-perfect discriminative ability with AUC $\geq $ 0.9999 for all classes. (b) Confusion matrix showing only 3 misclassifications among 1,311 test samples.}}{13}{figure.caption.4}\protected@file@percent }
-\newlabel{fig:roc_confusion}{{3}{13}{Classification performance analysis. (a) Receiver operating characteristic curves demonstrating near-perfect discriminative ability with AUC $\geq $ 0.9999 for all classes. (b) Confusion matrix showing only 3 misclassifications among 1,311 test samples}{figure.caption.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Uncertainty analysis for misclassified cases.}}{13}{table.caption.5}\protected@file@percent }
-\newlabel{tab:errors}{{2}{13}{Uncertainty analysis for misclassified cases}{table.caption.5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Clinical Deployment Thresholds}{13}{subsubsection.4.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Interpretability Analysis}{13}{subsection.4.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Uncertainty threshold analysis for clinical deployment. Higher thresholds reduce referrals but may miss errors.}}{14}{table.caption.6}\protected@file@percent }
-\newlabel{tab:thresholds}{{3}{14}{Uncertainty threshold analysis for clinical deployment. Higher thresholds reduce referrals but may miss errors}{table.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Model calibration and interpretability. (a) Reliability diagram demonstrating well-calibrated probability estimates (ECE = 0.019). (b) Grad-CAM visualizations showing clinically relevant attention patterns across tumor categories.}}{14}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:calibration_gradcam}{{4}{14}{Model calibration and interpretability. (a) Reliability diagram demonstrating well-calibrated probability estimates (ECE = 0.019). (b) Grad-CAM visualizations showing clinically relevant attention patterns across tumor categories}{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Ablation Study}{14}{subsection.4.4}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Ablation study quantifying component contributions. Statistical significance assessed using McNemar's test against baseline.}}{15}{table.caption.8}\protected@file@percent }
-\newlabel{tab:ablation}{{4}{15}{Ablation study quantifying component contributions. Statistical significance assessed using McNemar's test against baseline}{table.caption.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Comparison with published state-of-the-art methods. Ext.Val. = External validation on independent dataset; Unc. = Uncertainty quantification.}}{15}{table.caption.9}\protected@file@percent }
-\newlabel{tab:comparison}{{5}{15}{Comparison with published state-of-the-art methods. Ext.Val. = External validation on independent dataset; Unc. = Uncertainty quantification}{table.caption.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Comparison with Prior Methods}{15}{subsection.4.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Cross-Validation Results}{15}{subsection.4.6}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Five-fold stratified cross-validation results.}}{16}{table.caption.10}\protected@file@percent }
-\newlabel{tab:cv}{{6}{16}{Five-fold stratified cross-validation results}{table.caption.10}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Cross-dataset external validation results demonstrating geographic generalization.}}{16}{table.caption.11}\protected@file@percent }
-\newlabel{tab:external}{{7}{16}{Cross-dataset external validation results demonstrating geographic generalization}{table.caption.11}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}External Validation Results}{16}{subsection.4.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Computational Efficiency}{16}{subsection.4.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}Optimization}{14}{subsubsection.3.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.3}Implementation Details}{14}{subsubsection.3.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Evaluation Metrics}{14}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{14}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Classification Performance}{14}{subsection.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Per-class classification performance on held-out test set (n = 1,311).}}{15}{table.caption.4}\protected@file@percent }
+\newlabel{tab:main_results}{{1}{15}{Per-class classification performance on held-out test set (n = 1,311)}{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Model Calibration and Uncertainty Quantification}{15}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Classification performance analysis. (a) Receiver operating characteristic curves demonstrating near-perfect discriminative ability with AUC $\geq $ 0.9999 for all classes. (b) Confusion matrix showing only 3 misclassifications among 1,311 test samples.}}{16}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:roc_confusion}{{4}{16}{Classification performance analysis. (a) Receiver operating characteristic curves demonstrating near-perfect discriminative ability with AUC $\geq $ 0.9999 for all classes. (b) Confusion matrix showing only 3 misclassifications among 1,311 test samples}{figure.caption.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Uncertainty analysis for misclassified cases.}}{16}{table.caption.6}\protected@file@percent }
+\newlabel{tab:errors}{{2}{16}{Uncertainty analysis for misclassified cases}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Clinical Deployment Thresholds}{16}{subsubsection.4.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Interpretability Analysis}{16}{subsection.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Uncertainty threshold analysis for clinical deployment. Higher thresholds reduce referrals but may miss errors.}}{17}{table.caption.7}\protected@file@percent }
+\newlabel{tab:thresholds}{{3}{17}{Uncertainty threshold analysis for clinical deployment. Higher thresholds reduce referrals but may miss errors}{table.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Model calibration and interpretability. (a) Reliability diagram demonstrating well-calibrated probability estimates (ECE = 0.019). (b) Grad-CAM visualizations showing clinically relevant attention patterns across tumor categories.}}{17}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:calibration_gradcam}{{5}{17}{Model calibration and interpretability. (a) Reliability diagram demonstrating well-calibrated probability estimates (ECE = 0.019). (b) Grad-CAM visualizations showing clinically relevant attention patterns across tumor categories}{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Ablation Study}{17}{subsection.4.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Ablation study quantifying component contributions. Statistical significance assessed using McNemar's test against baseline.}}{18}{table.caption.9}\protected@file@percent }
+\newlabel{tab:ablation}{{4}{18}{Ablation study quantifying component contributions. Statistical significance assessed using McNemar's test against baseline}{table.caption.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Comparison with published state-of-the-art methods. Ext.Val. = External validation on independent dataset; Unc. = Uncertainty quantification.}}{18}{table.caption.10}\protected@file@percent }
+\newlabel{tab:comparison}{{5}{18}{Comparison with published state-of-the-art methods. Ext.Val. = External validation on independent dataset; Unc. = Uncertainty quantification}{table.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Comparison with Prior Methods}{18}{subsection.4.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Five-fold stratified cross-validation results.}}{19}{table.caption.11}\protected@file@percent }
+\newlabel{tab:cv}{{6}{19}{Five-fold stratified cross-validation results}{table.caption.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Cross-dataset external validation results demonstrating geographic generalization.}}{19}{table.caption.12}\protected@file@percent }
+\newlabel{tab:external}{{7}{19}{Cross-dataset external validation results demonstrating geographic generalization}{table.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Cross-Validation Results}{19}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}External Validation Results}{19}{subsection.4.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Comprehensive performance comparison across internal and external validation datasets. (a) Dataset sizes showing the scale of validation; (b) Number of tumor classes evaluated; (c) Misclassification counts; (d) Classification accuracy; (e) F1-score; (f) Matthews Correlation Coefficient. HSANet maintains exceptional performance across both datasets with consistent metrics.}}{20}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:cross_dataset}{{6}{20}{Comprehensive performance comparison across internal and external validation datasets. (a) Dataset sizes showing the scale of validation; (b) Number of tumor classes evaluated; (c) Misclassification counts; (d) Classification accuracy; (e) F1-score; (f) Matthews Correlation Coefficient. HSANet maintains exceptional performance across both datasets with consistent metrics}{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces PMRAM Bangladeshi dataset validation results. (a) Confusion matrix showing 99.47\% accuracy with 8 misclassifications, all involving glioma cases. (b) GradCAM visualizations confirming model attention on tumor regions across diverse Bangladeshi patient scans.}}{21}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:pmram_validation}{{7}{21}{PMRAM Bangladeshi dataset validation results. (a) Confusion matrix showing 99.47\% accuracy with 8 misclassifications, all involving glioma cases. (b) GradCAM visualizations confirming model attention on tumor regions across diverse Bangladeshi patient scans}{figure.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Computational efficiency comparison across architectures.}}{21}{table.caption.15}\protected@file@percent }
+\newlabel{tab:compute}{{8}{21}{Computational efficiency comparison across architectures}{table.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Computational Efficiency}{21}{subsection.4.8}\protected@file@percent }
 \citation{van2021artificial}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Computational efficiency comparison across architectures.}}{17}{table.caption.12}\protected@file@percent }
-\newlabel{tab:compute}{{8}{17}{Computational efficiency comparison across architectures}{table.caption.12}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{17}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Cross-Domain Generalization}{17}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Clinical Implications}{18}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Limitations}{18}{subsection.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{18}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{22}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Cross-Domain Generalization}{22}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Clinical Implications}{22}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Limitations}{23}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{23}{section.6}\protected@file@percent }
 \bibstyle{elsarticle-num}
 \bibdata{references}
 \bibcite{sung2021global}{{1}{}{{}}{{}}}
@@ -149,4 +155,4 @@
 \bibcite{selvaraju2017grad}{{34}{}{{}}{{}}}
 \bibcite{landis1977measurement}{{35}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\gdef \@abspage@last{25}
+\gdef \@abspage@last{30}

@@ -1,4 +1,4 @@
-\documentclass[review,3p]{elsarticle}
+\documentclass[preprint,12pt]{elsarticle}
 
 % Essential packages
 \usepackage[utf8]{inputenc}
@@ -150,6 +150,15 @@ Experiments utilized the Brain Tumor MRI Dataset \cite{msoud_nickparvar_2021}, a
 \item \textbf{Pituitary adenoma}: 1,757 images (25.0\%) -- benign tumors of the pituitary gland located in the sellar/suprasellar region
 \item \textbf{Healthy controls}: 2,000 images (28.5\%) -- normal brain MRI scans without pathological findings
 \end{itemize}
+
+Figure~\ref{fig:sample_mri} illustrates representative samples from each category, demonstrating the morphological diversity within the dataset.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/sample_mri_images.png}
+\caption{Sample MRI images from each tumor category and healthy controls across both the training dataset (Kaggle) and external validation dataset (Figshare). Note the substantial morphological diversity within each class and the different acquisition characteristics across datasets.}
+\label{fig:sample_mri}
+\end{figure}
 
 The predefined partition allocated 5,712 images (81.3\%) for training and 1,311 images (18.7\%) for testing. We maintained this partition for fair comparison with prior work \cite{aurna2022multiclass,saeedi2023mri}. Critically, we verified that the partition maintains \textbf{patient-level separation}---no patient's images appear in both training and test sets---preventing data leakage that could artificially inflate performance metrics. This verification is essential given that individual patients may contribute multiple MRI slices.
 
@@ -544,6 +553,32 @@ PMRAM & Bangladesh & 1,505 & 4 & 99.47 & 99.46 & 0.993 \\
 \end{table}
 
 Notably, HSANet generalizes across diverse populations: 99.90\% accuracy on Chinese patients (Figshare) and 99.47\% on Bangladeshi patients (PMRAM). Error analysis revealed consistent misclassification patterns across datasets---primarily glioma cases misclassified as meningioma---suggesting inherent diagnostic ambiguity in certain tumor presentations rather than model limitations. GradCAM visualizations (Fig.~\ref{fig:calibration_gradcam}b) confirm that attention concentrates on tumor regions across both external datasets, validating that the model learned clinically meaningful features.
+
+Figure~\ref{fig:cross_dataset} provides a comprehensive comparison of HSANet performance across the original Kaggle test set and external Figshare validation. Both datasets achieve near-perfect classification with only 3 misclassifications each, despite substantial differences in patient demographics and acquisition protocols.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/comprehensive_results.png}
+\caption{Comprehensive performance comparison across internal and external validation datasets. (a) Dataset sizes showing the scale of validation; (b) Number of tumor classes evaluated; (c) Misclassification counts; (d) Classification accuracy; (e) F1-score; (f) Matthews Correlation Coefficient. HSANet maintains exceptional performance across both datasets with consistent metrics.}
+\label{fig:cross_dataset}
+\end{figure}
+
+Figure~\ref{fig:pmram_validation} demonstrates HSANet generalization on the PMRAM Bangladeshi dataset, including GradCAM attention maps that verify the model focuses on clinically relevant tumor regions.
+
+\begin{figure}[!t]
+\centering
+\begin{subfigure}[b]{0.48\textwidth}
+\includegraphics[width=\textwidth]{figures/pmram_confusion_matrix.png}
+\caption{Confusion matrix}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.48\textwidth}
+\includegraphics[width=\textwidth]{figures/pmram_gradcam.png}
+\caption{GradCAM attention maps}
+\end{subfigure}
+\caption{PMRAM Bangladeshi dataset validation results. (a) Confusion matrix showing 99.47\% accuracy with 8 misclassifications, all involving glioma cases. (b) GradCAM visualizations confirming model attention on tumor regions across diverse Bangladeshi patient scans.}
+\label{fig:pmram_validation}
+\end{figure}
 
 \subsection{Computational Efficiency}
 

@@ -1,0 +1,18 @@
+{
+  "BRISC_2025": {
+    "dataset": "BRISC 2025",
+    "samples": 1000,
+    "accuracy": 99.3,
+    "precision_macro": 99.4319577827392,
+    "recall_macro": 99.00553055868016,
+    "f1_macro": 99.21148172399141,
+    "cohen_kappa": 0.9904304388600739,
+    "mcc": 0.9904621521666105,
+    "mean_uncertainty": 0.03855079784989357,
+    "glioma_accuracy": 99.21259842519686,
+    "meningioma_accuracy": 100.0,
+    "notumor_accuracy": 97.14285714285714,
+    "pituitary_accuracy": 99.66666666666667,
+    "auc_roc_macro": 99.9821317454972
+  }
+}

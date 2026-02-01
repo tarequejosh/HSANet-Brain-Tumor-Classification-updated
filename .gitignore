@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+
+# Model files (too large for GitHub - use releases)
+*.pth
+*.pt
+*.onnx
+
+# Datasets (not included)
+datasets/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Results (can be regenerated)
+results/figures/
+
+# Temporary
+*.tmp
+*.log

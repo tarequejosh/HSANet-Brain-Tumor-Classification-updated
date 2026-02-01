@@ -11,6 +11,7 @@
 \usepackage{xcolor}
 \usepackage{lineno}
 \usepackage{hyperref}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 
 % Line numbers for review
 \linenumbers
@@ -324,25 +325,107 @@ The total loss is:
 \end{equation}
 where $\lambda^{(t)} = \min(1, t/10) \times 0.2$ anneals the KL weight over epochs.
 
-\subsubsection{Optimization}
+\subsection{Training Procedure}
 
-We employed AdamW optimizer with $\beta_1 = 0.9$, $\beta_2 = 0.999$, and weight decay of $10^{-4}$. Initial learning rate was $3 \times 10^{-4}$ with cosine annealing to $10^{-6}$. Training proceeded for 30 epochs with early stopping (patience = 7 epochs) based on validation loss. Batch size was 32. Dropout rate of 0.3 was applied before the classification layer. Batch normalization used momentum 0.1 and epsilon $10^{-5}$. Features from three scales were globally average pooled and concatenated, yielding a 568-dimensional vector (48 + 136 + 384 = 568 channels).
+The complete HSANet training procedure is formalized in Algorithm~\ref{alg:training}. Key aspects include: (1) backbone freezing for initial epochs to preserve pretrained representations, (2) gradual KL regularization annealing to prevent early collapse to uniform predictions, (3) cosine learning rate scheduling for smooth convergence, and (4) early stopping with checkpoint restoration.
 
-\subsubsection{Implementation Details}
+\begin{algorithm}[!t]
+\caption{HSANet Training Procedure}
+\label{alg:training}
+\SetAlgoLined
+\KwIn{Training set $\mathcal{D}_{train}$, validation set $\mathcal{D}_{val}$}
+\KwIn{Hyperparameters: $\eta_0$, $\lambda_1$, $\lambda_2$, $\lambda_3$, $T_{anneal}$, $T_{max}$, patience}
+\KwOut{Best model checkpoint $\theta^*$}
 
-All experiments were conducted using PyTorch 2.0.1 with CUDA 11.8 on an NVIDIA Tesla P100 GPU (16GB VRAM). Complete training converged in approximately 25 epochs ($\sim$45 minutes). The implementation is publicly available at \url{https://github.com/tarequejosh/HSANet-Brain-Tumor-Classification}.
+Initialize EfficientNet-B3 backbone with ImageNet pretrained weights\;
+Initialize AMSM, DAM modules with Kaiming initialization\;
+Initialize evidential head with Xavier initialization\;
+Freeze backbone parameters for first 5 epochs\;
+$t \leftarrow 0$; $\text{best\_loss} \leftarrow \infty$; $\text{wait} \leftarrow 0$\;
+
+\For{$\text{epoch} = 1$ \KwTo $T_{max}$}{
+  \If{epoch $= 6$}{
+    Unfreeze backbone with learning rate $\eta_0/10$\;
+  }
+  $\lambda_3^{(t)} \leftarrow \min(1, t/T_{anneal}) \cdot \lambda_3$ \tcp*{Anneal KL weight}
+  $\eta_t \leftarrow \eta_0 \cdot \frac{1 + \cos(\pi \cdot t/T_{max})}{2}$ \tcp*{Cosine LR schedule}
+  
+  \For{each mini-batch $(\mathbf{X}, \mathbf{y})$ in $\mathcal{D}_{train}$}{
+    $\mathbf{X}_{aug} \leftarrow \text{Augment}(\mathbf{X})$ \tcp*{Data augmentation}
+    $\boldsymbol{\alpha} \leftarrow \text{HSANet}(\mathbf{X}_{aug})$ \tcp*{Forward pass}
+    Compute $\mathcal{L}_{CE}$, $\mathcal{L}_{focal}$, $\mathcal{L}_{KL}$ using Equations (10-12)\;
+    $\mathcal{L} \leftarrow \lambda_1 \mathcal{L}_{CE} + \lambda_2 \mathcal{L}_{focal} + \lambda_3^{(t)} \mathcal{L}_{KL}$\;
+    $\nabla_\theta \mathcal{L} \leftarrow \text{Backpropagate}(\mathcal{L})$\;
+    Clip $\|\nabla_\theta \mathcal{L}\|_2$ to maximum 1.0\;
+    $\theta \leftarrow \text{AdamW}(\theta, \nabla_\theta \mathcal{L}, \eta_t)$\;
+  }
+  
+  $\mathcal{L}_{val} \leftarrow \text{Evaluate}(\mathcal{D}_{val})$\;
+  \eIf{$\mathcal{L}_{val} < \text{best\_loss}$}{
+    Save checkpoint; $\text{best\_loss} \leftarrow \mathcal{L}_{val}$; $\text{wait} \leftarrow 0$\;
+  }{
+    $\text{wait} \leftarrow \text{wait} + 1$\;
+  }
+  
+  \If{wait $\geq$ patience}{
+    \textbf{break} \tcp*{Early stopping triggered}
+  }
+  $t \leftarrow t + 1$\;
+}
+\Return Best model checkpoint $\theta^*$
+\end{algorithm}
 
 \subsection{Evaluation Metrics}
 
-Classification performance was assessed using accuracy, precision, recall, F1-score (macro-averaged), Cohen's $\kappa$, Matthews Correlation Coefficient (MCC), and area under the receiver operating characteristic curve (AUC-ROC).
+\subsubsection{Classification Performance}
 
-Calibration quality was evaluated using Expected Calibration Error (ECE):
+Classification performance was assessed using the following metrics:
+
+\begin{itemize}
+\item \textbf{Accuracy}: $\text{Acc} = \frac{TP + TN}{\text{Total}}$
+\item \textbf{Precision}: $\text{Prec}_k = \frac{TP_k}{TP_k + FP_k}$ (per-class and macro-averaged)
+\item \textbf{Recall/Sensitivity}: $\text{Rec}_k = \frac{TP_k}{TP_k + FN_k}$
+\item \textbf{F1-Score}: $F1_k = \frac{2 \cdot \text{Prec}_k \cdot \text{Rec}_k}{\text{Prec}_k + \text{Rec}_k}$
+\item \textbf{Cohen's $\kappa$}: Agreement correcting for chance: $\kappa = \frac{p_o - p_e}{1 - p_e}$
+\item \textbf{Matthews Correlation Coefficient}: 
 \begin{equation}
-\text{ECE} = \sum_{m=1}^{M} \frac{|B_m|}{n} |acc(B_m) - conf(B_m)|
+\text{MCC} = \frac{TP \cdot TN - FP \cdot FN}{\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}
 \end{equation}
-where $B_m$ are confidence bins, $acc(B_m)$ is accuracy within bin $m$, and $conf(B_m)$ is mean confidence.
+\item \textbf{AUC-ROC}: Area under ROC curve using one-vs-rest strategy for multiclass
+\end{itemize}
 
-Interpretability was assessed using Gradient-weighted Class Activation Mapping (Grad-CAM) \cite{selvaraju2017grad}.
+\subsubsection{Model Calibration}
+
+Model calibration was evaluated using Expected Calibration Error (ECE):
+\begin{equation}
+\text{ECE} = \sum_{m=1}^{M} \frac{|B_m|}{n} |\text{acc}(B_m) - \text{conf}(B_m)|
+\end{equation}
+where predictions are binned into $M = 15$ equal-width intervals by confidence, $|B_m|$ is bin size, $\text{acc}(B_m)$ is accuracy within bin, and $\text{conf}(B_m)$ is mean confidence within bin. Reliability diagrams provide visual comparison of confidence vs. accuracy per bin.
+
+\subsubsection{Interpretability}
+
+Interpretability was assessed using Grad-CAM \cite{selvaraju2017gradcam}, computing gradient-weighted activations from the final convolutional layer:
+\begin{equation}
+L_{\text{GradCAM}}^c = \text{ReLU}\left(\sum_k \alpha_k^c A^k\right), \quad \alpha_k^c = \frac{1}{Z} \sum_i \sum_j \frac{\partial y^c}{\partial A_{ij}^k}
+\end{equation}
+where $A^k$ is the $k$-th feature map, $y^c$ is the class score, and $\alpha_k^c$ weights feature map importance.
+
+\subsection{Statistical Analysis}
+
+95\% confidence intervals for accuracy were computed using the Wilson score interval, appropriate for proportions. Five-fold stratified cross-validation assessed model stability, maintaining class proportions across folds. Statistical significance of performance differences was assessed using McNemar's test for paired comparisons. All experiments were repeated with three random seeds (42, 123, 456); reported values are means with standard deviations.
+
+\subsection{Implementation Details}
+
+All experiments were conducted using PyTorch 2.0.1 with the following computational environment:
+
+\begin{itemize}
+\item \textbf{Hardware}: NVIDIA Tesla P100 GPU (16GB VRAM), 30GB system RAM
+\item \textbf{Operating System}: Ubuntu 20.04 LTS
+\item \textbf{Software}: Python 3.10, PyTorch 2.0.1, CUDA 11.8, cuDNN 8.6
+\item \textbf{Key Libraries}: timm 0.9.2 (EfficientNet implementation), scikit-learn 1.3.0, matplotlib 3.7.1, numpy 1.24.3
+\end{itemize}
+
+Single-image inference requires 12 milliseconds on P100 GPU (batch size 1), enabling real-time clinical deployment at $>$80 images/second. Training converges in approximately 25 epochs ($\sim$45 minutes total wall-clock time). The complete implementation is publicly available at \\url{https://github.com/tarequejosh/HSANet-Brain-Tumor-Classification}.
 
 \section{Results}
 

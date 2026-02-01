@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  1 FEB 2026 22:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  1 FEB 2026 22:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -417,40 +417,93 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
 \Hy@SectionHShift=\skip60
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count319
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip61
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count320
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip62
+\skiplinenumber=\skip63
+\skiprule=\skip64
+\skiphlne=\skip65
+\skiptext=\skip66
+\skiplength=\skip67
+\algomargin=\skip68
+\skipalgocfslide=\skip69
+\algowidth=\dimen189
+\inoutsize=\dimen190
+\inoutindent=\dimen191
+\interspacetitleruled=\dimen192
+\interspacealgoruled=\dimen193
+\interspacetitleboxruled=\dimen194
+\algocf@ruledwidth=\skip70
+\algocf@inoutbox=\box62
+\algocf@inputbox=\box63
+\AlCapSkip=\skip71
+\AlCapHSkip=\skip72
+\algoskipindent=\skip73
+\algocf@nlbox=\box64
+\algocf@hangingbox=\box65
+\algocf@untilbox=\box66
+\algocf@skipuntil=\skip74
+\algocf@capbox=\box67
+\algocf@lcaptionbox=\skip75
+\algoheightruledefault=\skip76
+\algoheightrule=\skip77
+\algotitleheightruledefault=\skip78
+\algotitleheightrule=\skip79
+\c@algocfline=\count321
+\c@algocfproc=\count322
+\c@algocf=\count323
+\algocf@algoframe=\box68
+\algocf@algobox=\box69
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-
-(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+ (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count319
-\scratchdimen=\dimen189
-\scratchbox=\box62
-\nofMPsegments=\count320
-\nofMParguments=\count321
+\scratchcounter=\count324
+\scratchdimen=\dimen195
+\scratchbox=\box70
+\nofMPsegments=\count325
+\nofMParguments=\count326
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count322
-\MPscratchDim=\dimen190
-\MPnumerator=\count323
-\makeMPintoPDFobject=\count324
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen196
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
 \everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -464,32 +517,32 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 22.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
 
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
 
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figures/graphical_abstract.png, id=177, 246.6816pt x 246.6816pt>
+<figures/graphical_abstract.png, id=193, 246.6816pt x 246.6816pt>
 File: figures/graphical_abstract.png Graphic file (type png)
 <use figures/graphical_abstract.png>
-Package pdftex.def Info: figures/graphical_abstract.png  used on input line 57.
+Package pdftex.def Info: figures/graphical_abstract.png  used on input line 58.
 
 (pdftex.def)             Requested size: 246.68098pt x 246.68098pt.
 
-Overfull \hbox (9.26776pt too wide) in paragraph at lines 63--64
+Overfull \hbox (9.26776pt too wide) in paragraph at lines 64--65
 []\T1/cmr/m/n/12 Adaptive multi-scale mod-ule with learned input-dependent fu-s
 ion weights
  []
@@ -498,19 +551,19 @@ ion weights
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 80.
+(hyperref)                removing `\<def>-command' on input line 81.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cnotenum' on input line 80.
+(hyperref)                removing `\cnotenum' on input line 81.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 80.
+(hyperref)                removing `\<def>-command' on input line 81.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@corref' on input line 80.
+(hyperref)                removing `\@corref' on input line 81.
 
 [1
 
@@ -531,7 +584,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 \end{frontmatter}
+l.81 \end{frontmatter}
                        [1
 
 
@@ -542,9 +595,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 
+l.92 
       [2]
-Overfull \hbox (4.63399pt too wide) in paragraph at lines 98--99
+Overfull \hbox (4.63399pt too wide) in paragraph at lines 99--100
 []\T1/cmr/m/n/12 Uncertainty quan-tifi-ca-tion is par-tic-u-larly im-por-tant f
 or safety-critical med-
  []
@@ -552,7 +605,7 @@ or safety-critical med-
 
 
 [3]
-Overfull \hbox (3.46361pt too wide) in paragraph at lines 110--111
+Overfull \hbox (3.46361pt too wide) in paragraph at lines 111--112
 []\T1/cmr/m/n/12 Comprehensive ex-per-i-ments on a chal-leng-ing four-class bra
 in tu-mor bench-
  []
@@ -562,13 +615,13 @@ in tu-mor bench-
 [4]
 
 [5]
-Overfull \hbox (5.18123pt too wide) in paragraph at lines 142--143
+Overfull \hbox (5.18123pt too wide) in paragraph at lines 143--144
 \T1/cmr/m/n/12 able col-lec-tion com-pris-ing 7,023 T1-weighted gadolinium-enha
 nced MRI scans.
  []
 
 
-Overfull \hbox (45.76581pt too wide) in paragraph at lines 142--143
+Overfull \hbox (45.76581pt too wide) in paragraph at lines 143--144
 \T1/cmr/m/n/12 The dataset is avail-able at []$\T1/cmtt/m/n/12 https : / / www 
 . kaggle . com / datasets / masoudnickparvar /
  []
@@ -576,10 +629,10 @@ Overfull \hbox (45.76581pt too wide) in paragraph at lines 142--143
 
 
 [6]
-<figures/sample_mri_images.png, id=303, 1006.7211pt x 518.4168pt>
+<figures/sample_mri_images.png, id=319, 1006.7211pt x 518.4168pt>
 File: figures/sample_mri_images.png Graphic file (type png)
 <use figures/sample_mri_images.png>
-Package pdftex.def Info: figures/sample_mri_images.png  used on input line 155.
+Package pdftex.def Info: figures/sample_mri_images.png  used on input line 156.
 
 (pdftex.def)             Requested size: 390.0pt x 200.83696pt.
 
@@ -587,291 +640,277 @@ Package pdftex.def Info: figures/sample_mri_images.png  used on input line 155.
 [7]
 
 [8 <./figures/sample_mri_images.png>]
-Overfull \hbox (16.7687pt too wide) in paragraph at lines 194--195
+Overfull \hbox (16.7687pt too wide) in paragraph at lines 195--196
 \T1/cmr/m/n/12 cess-ing pipeline (Fig. []2[]): (1) a fea-ture ex-trac-tion back
 -bone based on EfficientNet-
  []
 
-<figures/architecture_diagram.png, id=325, 246.6816pt x 246.6816pt>
+<figures/architecture_diagram.png, id=341, 246.6816pt x 246.6816pt>
 File: figures/architecture_diagram.png Graphic file (type png)
 <use figures/architecture_diagram.png>
 Package pdftex.def Info: figures/architecture_diagram.png  used on input line 1
-98.
+99.
 (pdftex.def)             Requested size: 390.0pt x 390.0387pt.
 
 
 [9]
 
 [10 <./figures/architecture_diagram.png>]
-Overfull \hbox (6.07428pt too wide) in paragraph at lines 232--233
+Overfull \hbox (6.07428pt too wide) in paragraph at lines 233--234
 []\T1/cmr/m/n/12 The en-hanced fea-ture map com-bines weighted fea-tures with r
 esid-ual preser-
  []
 
-<figures/amsm_module.png, id=342, 246.6816pt x 246.6816pt>
+<figures/amsm_module.png, id=359, 246.6816pt x 246.6816pt>
 File: figures/amsm_module.png Graphic file (type png)
 <use figures/amsm_module.png>
-Package pdftex.def Info: figures/amsm_module.png  used on input line 257.
+Package pdftex.def Info: figures/amsm_module.png  used on input line 258.
 (pdftex.def)             Requested size: 187.19833pt x 187.20517pt.
-<figures/dam_module.png, id=343, 246.6816pt x 246.6816pt>
+<figures/dam_module.png, id=360, 246.6816pt x 246.6816pt>
 File: figures/dam_module.png Graphic file (type png)
 <use figures/dam_module.png>
-Package pdftex.def Info: figures/dam_module.png  used on input line 262.
+Package pdftex.def Info: figures/dam_module.png  used on input line 263.
 (pdftex.def)             Requested size: 187.19833pt x 187.20517pt.
 
 
 [11]
 
 [12 <./figures/amsm_module.png> <./figures/dam_module.png>]
-Overfull \hbox (8.29298pt too wide) in paragraph at lines 313--315
+Overfull \hbox (8.29298pt too wide) in paragraph at lines 314--316
 \T1/cmr/m/n/12 dress in-her-ent \T1/cmr/m/it/12 dif-fi-culty \T1/cmr/m/n/12 im-
 bal-ance: meningioma-glioma dif-fer-en-ti-a-tion presents
  []
 
 
+LaTeX Warning: Float too large for page by 9.18202pt on input line 376.
+
+
 
 [13]
-Overfull \hbox (69.90746pt too wide) in paragraph at lines 333--334
-\T1/cmr/m/n/12 avail-able at []$\T1/cmtt/m/n/12 https : / / github . com / tare
-quejosh / HSANet-[]Brain-[]Tumor-[]Classification$[]\T1/cmr/m/n/12 . 
- []
 
-
-Overfull \hbox (6.58775pt too wide) in paragraph at lines 339--340
-[]\T1/cmr/m/n/12 Calibration qual-ity was eval-u-ated us-ing Ex-pected Cal-i-br
-a-tion Er-ror (ECE): 
- []
-
-
-Overfull \hbox (8.80557pt too wide) in paragraph at lines 342--344
-\T1/cmr/m/n/12 where $\OML/cmm/m/it/12 B[]$ \T1/cmr/m/n/12 are con-fi-dence bin
-s, $\OML/cmm/m/it/12 acc\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 B[]\OT1/cmr/m/n/12 )$
- \T1/cmr/m/n/12 is ac-cu-racy within bin $\OML/cmm/m/it/12 m$\T1/cmr/m/n/12 , a
-nd $\OML/cmm/m/it/12 conf\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 B[]\OT1/cmr/m/n/12 )
-$
- []
-
-
-Overfull \hbox (43.33095pt too wide) in paragraph at lines 357--369
- [][] 
- []
+Package natbib Warning: Citation `selvaraju2017gradcam' on page 14 undefined on
+ input line 407.
 
 
 
 [14]
-Overfull \hbox (6.81285pt too wide) in paragraph at lines 373--374
+
+[15]
+Overfull \hbox (43.33095pt too wide) in paragraph at lines 440--452
+ [][] 
+ []
+
+
+Overfull \hbox (6.81285pt too wide) in paragraph at lines 456--457
 \T1/cmr/m/n/12 AUC achieved for both pi-tu-itary ade-noma and healthy con-trol 
 classes (Fig. []4[]a).
  []
 
-<figures/roc_curves.png, id=398, 722.7pt x 578.16pt>
+<figures/roc_curves.png, id=419, 722.7pt x 578.16pt>
 File: figures/roc_curves.png Graphic file (type png)
 <use figures/roc_curves.png>
-Package pdftex.def Info: figures/roc_curves.png  used on input line 381.
+Package pdftex.def Info: figures/roc_curves.png  used on input line 464.
 (pdftex.def)             Requested size: 187.19833pt x 149.75343pt.
-<figures/confusion_matrix.png, id=399, 578.16pt x 433.62pt>
+<figures/confusion_matrix.png, id=420, 578.16pt x 433.62pt>
 File: figures/confusion_matrix.png Graphic file (type png)
 <use figures/confusion_matrix.png>
-Package pdftex.def Info: figures/confusion_matrix.png  used on input line 387.
+Package pdftex.def Info: figures/confusion_matrix.png  used on input line 470.
 (pdftex.def)             Requested size: 187.19833pt x 140.39551pt.
 
-Overfull \hbox (77.93102pt too wide) in paragraph at lines 404--415
+Overfull \hbox (77.93102pt too wide) in paragraph at lines 487--498
  [][] 
  []
 
 
 
-[15]
-Overfull \hbox (18.12567pt too wide) in paragraph at lines 442--443
+[16]
+Overfull \hbox (18.12567pt too wide) in paragraph at lines 525--526
 \T1/cmr/m/n/12 extra-axial masses; healthy brain at-ten-tion dis-tributes acros
 s nor-mal parenchyma
  []
 
 
-Overfull \hbox (12.05635pt too wide) in paragraph at lines 442--443
+Overfull \hbox (12.05635pt too wide) in paragraph at lines 525--526
 \T1/cmr/m/n/12 with-out fo-cal con-cen-tra-tion; pi-tu-itary at-ten-tion cen-te
 rs on the sel-lar/suprasellar
  []
 
-
-
-[16 <./figures/roc_curves.png> <./figures/confusion_matrix.png>]
-<figures/reliability_diagram.png, id=418, 867.24pt x 361.35pt>
+<figures/reliability_diagram.png, id=433, 867.24pt x 361.35pt>
 File: figures/reliability_diagram.png Graphic file (type png)
 <use figures/reliability_diagram.png>
-Package pdftex.def Info: figures/reliability_diagram.png  used on input line 44
-8.
+Package pdftex.def Info: figures/reliability_diagram.png  used on input line 53
+1.
 (pdftex.def)             Requested size: 175.49881pt x 73.12335pt.
-<figures/gradcam_grid.png, id=419, 1717.1352pt x 1182.819pt>
+<figures/gradcam_grid.png, id=434, 1717.1352pt x 1182.819pt>
 File: figures/gradcam_grid.png Graphic file (type png)
 <use figures/gradcam_grid.png>
-Package pdftex.def Info: figures/gradcam_grid.png  used on input line 454.
+Package pdftex.def Info: figures/gradcam_grid.png  used on input line 537.
 (pdftex.def)             Requested size: 202.80167pt x 139.69415pt.
 
-Overfull \hbox (1.43468pt too wide) in paragraph at lines 463--464
+Overfull \hbox (1.43468pt too wide) in paragraph at lines 546--547
 \T1/cmr/m/n/12 AMSM im-proved ac-cu-racy to 99.30% and AUC from 0.9997 to 0.999
 9. Adding
  []
 
 
-Overfull \hbox (159.49883pt too wide) in paragraph at lines 469--480
+Overfull \hbox (159.49883pt too wide) in paragraph at lines 552--563
  [][] 
  []
 
 
 
-[17 <./figures/reliability_diagram.png> <./figures/gradcam_grid.png>]
-Overfull \hbox (9.91216pt too wide) in paragraph at lines 484--485
+[17 <./figures/roc_curves.png> <./figures/confusion_matrix.png>]
+Overfull \hbox (9.91216pt too wide) in paragraph at lines 567--568
 []\T1/cmr/m/n/12 HSANet achieves state-of-the-art per-for-mance com-pared to pu
 b-lished meth-
  []
 
 
-Overfull \hbox (85.41386pt too wide) in paragraph at lines 491--512
+Overfull \hbox (85.41386pt too wide) in paragraph at lines 574--595
  [][] 
  []
 
-
-
-[18]
-<figures/fig1_accuracy_comparison.png, id=439, 860.7357pt x 426.393pt>
+<figures/fig1_accuracy_comparison.png, id=446, 860.7357pt x 426.393pt>
 File: figures/fig1_accuracy_comparison.png Graphic file (type png)
 <use figures/fig1_accuracy_comparison.png>
 Package pdftex.def Info: figures/fig1_accuracy_comparison.png  used on input li
-ne 526.
+ne 609.
 (pdftex.def)             Requested size: 390.0pt x 193.19583pt.
-<figures/fig2_params_vs_accuracy.png, id=441, 715.7139pt x 498.9039pt>
+
+
+[18 <./figures/reliability_diagram.png> <./figures/gradcam_grid.png>]
+<figures/fig2_params_vs_accuracy.png, id=456, 715.7139pt x 498.9039pt>
 File: figures/fig2_params_vs_accuracy.png Graphic file (type png)
 <use figures/fig2_params_vs_accuracy.png>
 Package pdftex.def Info: figures/fig2_params_vs_accuracy.png  used on input lin
-e 537.
+e 620.
 (pdftex.def)             Requested size: 390.0pt x 271.86298pt.
 
 
 [19 <./figures/fig1_accuracy_comparison.png>]
-
-[20 <./figures/fig2_params_vs_accuracy.png>]
-<figures/fig3_radar_comparison.png, id=456, 703.428pt x 593.8185pt>
+<figures/fig3_radar_comparison.png, id=465, 703.428pt x 593.8185pt>
 File: figures/fig3_radar_comparison.png Graphic file (type png)
 <use figures/fig3_radar_comparison.png>
 Package pdftex.def Info: figures/fig3_radar_comparison.png  used on input line 
-556.
+639.
 (pdftex.def)             Requested size: 331.50238pt x 279.84679pt.
-<figures/fig4_training_curves.png, id=458, 1004.553pt x 354.6048pt>
+
+
+[20 <./figures/fig2_params_vs_accuracy.png>]
+<figures/fig4_training_curves.png, id=472, 1004.553pt x 354.6048pt>
 File: figures/fig4_training_curves.png Graphic file (type png)
 <use figures/fig4_training_curves.png>
-Package pdftex.def Info: figures/fig4_training_curves.png  used on input line 5
-74.
+Package pdftex.def Info: figures/fig4_training_curves.png  used on input line 6
+57.
 (pdftex.def)             Requested size: 390.0pt x 137.66765pt.
-
-
-[21 <./figures/fig3_radar_comparison.png>]
-<figures/fig5_roc_curves.png, id=466, 1076.1003pt x 714.5094pt>
+<figures/fig5_roc_curves.png, id=474, 1076.1003pt x 714.5094pt>
 File: figures/fig5_roc_curves.png Graphic file (type png)
 <use figures/fig5_roc_curves.png>
-Package pdftex.def Info: figures/fig5_roc_curves.png  used on input line 585.
+Package pdftex.def Info: figures/fig5_roc_curves.png  used on input line 668.
 (pdftex.def)             Requested size: 390.0pt x 258.94579pt.
-<figures/fig6_confusion_matrices.png, id=468, 1075.8594pt x 714.5094pt>
+<figures/fig6_confusion_matrices.png, id=476, 1075.8594pt x 714.5094pt>
 File: figures/fig6_confusion_matrices.png Graphic file (type png)
 <use figures/fig6_confusion_matrices.png>
 Package pdftex.def Info: figures/fig6_confusion_matrices.png  used on input lin
-e 596.
+e 679.
 (pdftex.def)             Requested size: 390.0pt x 259.0112pt.
-<figures/fig7_per_class_f1.png, id=470, 1005.2757pt x 499.6266pt>
+<figures/fig7_per_class_f1.png, id=478, 1005.2757pt x 499.6266pt>
 File: figures/fig7_per_class_f1.png Graphic file (type png)
 <use figures/fig7_per_class_f1.png>
-Package pdftex.def Info: figures/fig7_per_class_f1.png  used on input line 607.
+Package pdftex.def Info: figures/fig7_per_class_f1.png  used on input line 690.
 
 (pdftex.def)             Requested size: 390.0pt x 193.83202pt.
-<figures/fig8_computational_efficiency.png, id=472, 1003.1076pt x 426.8748pt>
+
+
+[21 <./figures/fig3_radar_comparison.png>]
+
+[22 <./figures/fig4_training_curves.png> <./figures/fig5_roc_curves.png>]
+<figures/fig8_computational_efficiency.png, id=496, 1003.1076pt x 426.8748pt>
 File: figures/fig8_computational_efficiency.png Graphic file (type png)
 <use figures/fig8_computational_efficiency.png>
 Package pdftex.def Info: figures/fig8_computational_efficiency.png  used on inp
-ut line 618.
+ut line 701.
 (pdftex.def)             Requested size: 390.0pt x 165.96593pt.
 
-Overfull \hbox (73.36674pt too wide) in paragraph at lines 631--644
+Overfull \hbox (73.36674pt too wide) in paragraph at lines 714--727
  [][] 
  []
 
 
 
-[22 <./figures/fig4_training_curves.png>]
+[23 <./figures/fig6_confusion_matrices.png>]
 
-[23 <./figures/fig5_roc_curves.png>]
-
-[24 <./figures/fig6_confusion_matrices.png>]
-
-[25 <./figures/fig7_per_class_f1.png> <./figures/fig8_computational_efficiency.
+[24 <./figures/fig7_per_class_f1.png> <./figures/fig8_computational_efficiency.
 png>]
-<figures/comprehensive_results.png, id=506, 850.1361pt x 603.9363pt>
+<figures/comprehensive_results.png, id=516, 850.1361pt x 603.9363pt>
 File: figures/comprehensive_results.png Graphic file (type png)
 <use figures/comprehensive_results.png>
 Package pdftex.def Info: figures/comprehensive_results.png  used on input line 
-674.
+757.
 (pdftex.def)             Requested size: 390.0pt x 277.05841pt.
 
-Overfull \hbox (12.82678pt too wide) in paragraph at lines 679--680
+Overfull \hbox (12.82678pt too wide) in paragraph at lines 762--763
 []\T1/cmr/m/n/12 Figure []15[] demon-strates HSANet gen-er-al-iza-tion on the P
 M-RAM Bangladeshi
  []
 
-<figures/pmram_confusion_matrix.png, id=508, 722.7pt x 578.16pt>
+
+
+[25 <./figures/comprehensive_results.png>]
+<figures/pmram_confusion_matrix.png, id=525, 722.7pt x 578.16pt>
 File: figures/pmram_confusion_matrix.png Graphic file (type png)
 <use figures/pmram_confusion_matrix.png>
 Package pdftex.def Info: figures/pmram_confusion_matrix.png  used on input line
- 684.
+ 767.
 (pdftex.def)             Requested size: 187.19833pt x 149.75343pt.
-<figures/pmram_gradcam.png, id=509, 1110.0672pt x 853.2678pt>
+<figures/pmram_gradcam.png, id=526, 1110.0672pt x 853.2678pt>
 File: figures/pmram_gradcam.png Graphic file (type png)
 <use figures/pmram_gradcam.png>
-Package pdftex.def Info: figures/pmram_gradcam.png  used on input line 689.
+Package pdftex.def Info: figures/pmram_gradcam.png  used on input line 772.
 (pdftex.def)             Requested size: 187.19833pt x 143.88182pt.
 
-
-[26 <./figures/comprehensive_results.png>]
-Overfull \hbox (80.67899pt too wide) in paragraph at lines 704--717
+Overfull \hbox (80.67899pt too wide) in paragraph at lines 787--800
  [][] 
  []
 
 
 
-[27 <./figures/pmram_confusion_matrix.png> <./figures/pmram_gradcam.png>]
+[26 <./figures/pmram_confusion_matrix.png> <./figures/pmram_gradcam.png>]
 
-[28]
-Overfull \hbox (147.30797pt too wide) in paragraph at lines 741--742
+[27]
+Overfull \hbox (147.30797pt too wide) in paragraph at lines 824--825
 \T1/cmr/m/n/12 els are pub-licly avail-able at []$\T1/cmtt/m/n/12 https : / / g
 ithub . com / tarequejosh / HSANet-[]Brain-[]Tumor-[]Classification$[]\T1/cmr/m
 /n/12 . 
  []
 
 
-
-[29]
-Overfull \hbox (10.18967pt too wide) in paragraph at lines 757--758
+Overfull \hbox (10.18967pt too wide) in paragraph at lines 840--841
 \T1/cmtt/m/n/12 kaggle . com / datasets / masoudnickparvar / brain-[]tumor-[]mr
 i-[]dataset$[]\T1/cmr/m/n/12 . The
  []
 
 
-Overfull \hbox (22.34233pt too wide) in paragraph at lines 757--758
+Overfull \hbox (22.34233pt too wide) in paragraph at lines 840--841
 \T1/cmr/m/n/12 Figshare Brain Tu-mor Dataset is avail-able at []$\T1/cmtt/m/n/1
 2 https : / / figshare . com / articles /
  []
 
 
-Overfull \hbox (88.1808pt too wide) in paragraph at lines 757--758
+Overfull \hbox (88.1808pt too wide) in paragraph at lines 840--841
 \T1/cmr/m/n/12 are avail-able at []$\T1/cmtt/m/n/12 https : / / github . com / 
 tarequejosh / HSANet-[]Brain-[]Tumor-[]Classification$[]\T1/cmr/m/n/12 . 
  []
 
-(./main.bbl
+
+
+[28] (./main.bbl
+
+[29]
 
 [30]
 
 [31]
-
-[32]
 Underfull \hbox (badness 4739) in paragraph at lines 147--150
 \T1/cmtt/m/n/12 datasets / masoudnickparvar / brain-[]tumor-[]mri-[]dataset$[]\
 T1/cmr/m/n/12 , ac-cessed:
@@ -884,22 +923,34 @@ Underfull \hbox (badness 1087) in paragraph at lines 170--174
 
 )
 
-[33] (./main.aux)
+Package natbib Warning: There were undefined citations.
+
+
+
+[32]
+
+[33]
+
+[34]
+
+[35]
+
+[36] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E83D6CA1FCAF927783B19D4BA9E86CB0;7942.
+(rerunfilecheck)             Checksum: A6D0F5D822122D19A382EDBF4B6FD158;8621.
  ) 
 Here is how much of TeX's memory you used:
- 13562 strings out of 473190
- 215151 string characters out of 5715801
- 619101 words of memory out of 5000000
- 36463 multiletter control sequences out of 15000+600000
- 581433 words of font info for 97 fonts, out of 8000000 for 9000
+ 14671 strings out of 473190
+ 233730 string characters out of 5715801
+ 669915 words of memory out of 5000000
+ 37509 multiletter control sequences out of 15000+600000
+ 583582 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,11n,79p,1099b,682s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,18n,79p,1099b,683s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -915,23 +966,24 @@ xlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texl
 ive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
 e/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texl
-ive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texliv
-e/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/
-2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/20
-25/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025
-/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025/texmf
--dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2025/texmf-d
-ist/fonts/type1/public/cm-super/sfti0700.pfb></usr/local/texlive/2025/texmf-dis
-t/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025/texmf-dist/
-fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2025/texmf-dist/fo
-nts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2025/texmf-dist/font
-s/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (35 pages, 19831208 bytes).
+ive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texliv
+e/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/
+2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/20
+25/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025
+/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf
+-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025/texmf-d
+ist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2025/texmf-dis
+t/fonts/type1/public/cm-super/sfti0700.pfb></usr/local/texlive/2025/texmf-dist/
+fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025/texmf-dist/fo
+nts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2025/texmf-dist/font
+s/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/
+type1/public/cm-super/sftt1200.pfb>
+Output written on main.pdf (38 pages, 19874353 bytes).
 PDF statistics:
- 724 PDF objects out of 1000 (max. 8388607)
- 588 compressed objects within 6 object streams
- 161 named destinations out of 1000 (max. 500000)
- 445 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 804 PDF objects out of 1000 (max. 8388607)
+ 662 compressed objects within 7 object streams
+ 204 named destinations out of 1000 (max. 500000)
+ 477 words of extra memory for PDF output out of 10000 (max. 10000000)
 

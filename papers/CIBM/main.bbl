@@ -172,12 +172,6 @@ K.~G. van Leeuwen, S.~Schalekamp, M.~J. Rutten, P.~Snoeren, M.~de~Rooij, J.~J.
   commercially available products and their scientific evidence, European
   Radiology 31~(6) (2021) 3797--3804.
 
-\bibitem{selvaraju2017grad}
-R.~R. Selvaraju, M.~Cogswell, A.~Das, R.~Vedantam, D.~Parikh, D.~Batra,
-  {Grad-CAM}: Visual explanations from deep networks via gradient-based
-  localization, in: Proceedings of the IEEE International Conference on
-  Computer Vision, 2017, pp. 618--626.
-
 \bibitem{landis1977measurement}
 J.~R. Landis, G.~G. Koch, The measurement of observer agreement for categorical
   data, Biometrics (1977) 159--174.

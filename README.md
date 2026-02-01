@@ -88,7 +88,7 @@ HSANet_Research/
 ### Installation
 
 ```bash
-git clone https://github.com/tarequejosh/HSANet-Brain-Tumor-Classification.git
+git clone https://github.com/tarequejosh/HSANet-Brain-Tumor-Classification-updated.git
 cd HSANet-Brain-Tumor-Classification/code
 pip install -r requirements.txt
 ```

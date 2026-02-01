@@ -53,7 +53,7 @@
 
 \textbf{Results:} Comprehensive experiments on 7,023 brain MRI scans spanning four diagnostic categories yielded 99.77\% accuracy (95\% CI: 99.45--99.93\%) with only three misclassifications among 1,311 test samples. The model achieved macro-averaged AUC-ROC of 0.9999 and expected calibration error (ECE) of 0.019, indicating well-calibrated predictions. External validation on three independent datasets---Figshare (n=3,064; 99.90\% accuracy), PMRAM (n=1,505; 99.47\%), and BRISC 2025 (n=1,000; 99.30\%)---totaling 5,569 samples from China, Bangladesh, and Iran, demonstrated exceptional cross-domain generalization with combined accuracy of 99.59\%. Misclassified samples exhibited significantly elevated epistemic uncertainty ($p < 0.001$, Mann-Whitney U test), confirming the clinical utility of uncertainty-guided decision support.
 
-\textbf{Conclusions:} HSANet achieves state-of-the-art classification accuracy while providing calibrated uncertainty estimates essential for clinical decision support. The combination of adaptive multi-scale processing, attention-based feature refinement, and evidential deep learning offers a principled framework for trustworthy medical image classification. Complete implementation and pretrained weights are publicly available at \url{https://github.com/tarequejosh/HSANet-Brain-Tumor-Classification}.
+\textbf{Conclusions:} HSANet achieves state-of-the-art classification accuracy while providing calibrated uncertainty estimates essential for clinical decision support. The combination of adaptive multi-scale processing, attention-based feature refinement, and evidential deep learning offers a principled framework for trustworthy medical image classification. Complete implementation and pretrained weights are publicly available at \url{https://github.com/tarequejosh/HSANet-Brain-Tumor-Classification-updated}.
 \end{abstract}
 
 %% Graphical abstract
@@ -431,7 +431,7 @@ All experiments were conducted using PyTorch 2.0.1 with the following computatio
 \item \textbf{Key Libraries}: timm 0.9.2 (EfficientNet implementation), scikit-learn 1.3.0, matplotlib 3.7.1, numpy 1.24.3
 \end{itemize}
 
-Single-image inference requires 12 milliseconds on P100 GPU (batch size 1), enabling real-time clinical deployment at $>$80 images/second. Training converges in approximately 25 epochs ($\sim$45 minutes total wall-clock time). The complete implementation is publicly available at \\url{https://github.com/tarequejosh/HSANet-Brain-Tumor-Classification}.
+Single-image inference requires 12 milliseconds on P100 GPU (batch size 1), enabling real-time clinical deployment at $>$80 images/second. Training converges in approximately 25 epochs ($\sim$45 minutes total wall-clock time). The complete implementation is publicly available at \\url{https://github.com/tarequejosh/HSANet-Brain-Tumor-Classification-updated}.
 
 \section{Results}
 
@@ -760,7 +760,7 @@ Several limitations should be acknowledged. First, while external validation str
 
 \section{Conclusions}
 
-We presented HSANet, a hybrid scale-attention network achieving 99.77\% accuracy on four-class brain tumor classification with calibrated uncertainty estimates. The proposed architecture integrates three complementary innovations: an Adaptive Multi-Scale Module with input-dependent fusion weights, a Dual Attention Module for feature refinement, and an evidential classification head enabling principled uncertainty decomposition. External validation on three independent datasets from China, Bangladesh, and Iran (n=5,569 total; 99.59\% combined accuracy) demonstrates robust cross-domain generalization across diverse patient populations and acquisition protocols. Error analysis confirms that misclassified cases exhibit significantly elevated uncertainty that would trigger human review in clinical workflows. Complete source code and pretrained models are publicly available at \url{https://github.com/tarequejosh/HSANet-Brain-Tumor-Classification}.
+We presented HSANet, a hybrid scale-attention network achieving 99.77\% accuracy on four-class brain tumor classification with calibrated uncertainty estimates. The proposed architecture integrates three complementary innovations: an Adaptive Multi-Scale Module with input-dependent fusion weights, a Dual Attention Module for feature refinement, and an evidential classification head enabling principled uncertainty decomposition. External validation on three independent datasets from China, Bangladesh, and Iran (n=5,569 total; 99.59\% combined accuracy) demonstrates robust cross-domain generalization across diverse patient populations and acquisition protocols. Error analysis confirms that misclassified cases exhibit significantly elevated uncertainty that would trigger human review in clinical workflows. Complete source code and pretrained models are publicly available at \url{https://github.com/tarequejosh/HSANet-Brain-Tumor-Classification-updated}.
 
 \section*{CRediT Author Statement}
 
@@ -776,7 +776,7 @@ The authors thank Kaggle user Masoud Nickparvar for making the Brain Tumor MRI D
 
 \section*{Data Availability}
 
-The Brain Tumor MRI Dataset is publicly available at \url{https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset}. The Figshare Brain Tumor Dataset is available at \url{https://figshare.com/articles/dataset/brain_tumor_dataset/1512427}. Source code and trained models are available at \url{https://github.com/tarequejosh/HSANet-Brain-Tumor-Classification}.
+The Brain Tumor MRI Dataset is publicly available at \url{https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset}. The Figshare Brain Tumor Dataset is available at \url{https://figshare.com/articles/dataset/brain_tumor_dataset/1512427}. Source code and trained models are available at \url{https://github.com/tarequejosh/HSANet-Brain-Tumor-Classification-updated}.
 
 %% References
 \bibliographystyle{elsarticle-num}

@@ -97,25 +97,49 @@
 \@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Comparison with published state-of-the-art methods. Ext.Val. = External validation on independent dataset; Unc. = Uncertainty quantification.}}{18}{table.caption.10}\protected@file@percent }
 \newlabel{tab:comparison}{{5}{18}{Comparison with published state-of-the-art methods. Ext.Val. = External validation on independent dataset; Unc. = Uncertainty quantification}{table.caption.10}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Comparison with Prior Methods}{18}{subsection.4.5}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Five-fold stratified cross-validation results.}}{19}{table.caption.11}\protected@file@percent }
-\newlabel{tab:cv}{{6}{19}{Five-fold stratified cross-validation results}{table.caption.11}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Cross-dataset external validation results.}}{19}{table.caption.12}\protected@file@percent }
-\newlabel{tab:external}{{7}{19}{Cross-dataset external validation results}{table.caption.12}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Cross-Validation Results}{19}{subsection.4.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}External Validation Results}{19}{subsection.4.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Comprehensive performance comparison across internal and external validation datasets. (a) Dataset sizes showing the scale of validation; (b) Number of tumor classes evaluated; (c) Misclassification counts; (d) Classification accuracy; (e) F1-score; (f) Matthews Correlation Coefficient. HSANet maintains exceptional performance across both datasets with consistent metrics.}}{20}{figure.caption.13}\protected@file@percent }
-\newlabel{fig:cross_dataset}{{6}{20}{Comprehensive performance comparison across internal and external validation datasets. (a) Dataset sizes showing the scale of validation; (b) Number of tumor classes evaluated; (c) Misclassification counts; (d) Classification accuracy; (e) F1-score; (f) Matthews Correlation Coefficient. HSANet maintains exceptional performance across both datasets with consistent metrics}{figure.caption.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces PMRAM Bangladeshi dataset validation results. (a) Confusion matrix showing 99.47\% accuracy with 8 misclassifications, all involving glioma cases. (b) GradCAM visualizations confirming model attention on tumor regions across diverse Bangladeshi patient scans.}}{21}{figure.caption.14}\protected@file@percent }
-\newlabel{fig:pmram_validation}{{7}{21}{PMRAM Bangladeshi dataset validation results. (a) Confusion matrix showing 99.47\% accuracy with 8 misclassifications, all involving glioma cases. (b) GradCAM visualizations confirming model attention on tumor regions across diverse Bangladeshi patient scans}{figure.caption.14}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Computational efficiency comparison across architectures.}}{21}{table.caption.15}\protected@file@percent }
-\newlabel{tab:compute}{{8}{21}{Computational efficiency comparison across architectures}{table.caption.15}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Computational Efficiency}{21}{subsection.4.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Classification accuracy comparison across state-of-the-art architectures on the Brain Tumor MRI Dataset. All models achieve $>$99\% accuracy, with VGG-16 and Swin-Tiny achieving 99.85\%. HSANet achieves 99.77\% while uniquely providing uncertainty quantification.}}{19}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:accuracy_comparison}{{6}{19}{Classification accuracy comparison across state-of-the-art architectures on the Brain Tumor MRI Dataset. All models achieve $>$99\% accuracy, with VGG-16 and Swin-Tiny achieving 99.85\%. HSANet achieves 99.77\% while uniquely providing uncertainty quantification}{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.1}Accuracy Comparison Analysis}{19}{subsubsection.4.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.2}Computational Efficiency Analysis}{19}{subsubsection.4.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Efficiency analysis: Parameters (millions) versus accuracy. HSANet (star marker) achieves near-optimal accuracy with only 15.6M parameters---5.5$\times $ fewer than ViT-B/16 (85.8M) and 8.6$\times $ fewer than VGG-16 (134.3M). The green shaded region indicates optimal efficiency.}}{20}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:efficiency_analysis}{{7}{20}{Efficiency analysis: Parameters (millions) versus accuracy. HSANet (star marker) achieves near-optimal accuracy with only 15.6M parameters---5.5$\times $ fewer than ViT-B/16 (85.8M) and 8.6$\times $ fewer than VGG-16 (134.3M). The green shaded region indicates optimal efficiency}{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.3}Multi-Dimensional Performance Comparison}{20}{subsubsection.4.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Multi-dimensional performance comparison using radar chart. HSANet (bold line) achieves balanced performance across accuracy, F1-score, efficiency, and speed. Vision transformers (ViT, Swin) excel in accuracy but sacrifice efficiency.}}{21}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:radar_comparison}{{8}{21}{Multi-dimensional performance comparison using radar chart. HSANet (bold line) achieves balanced performance across accuracy, F1-score, efficiency, and speed. Vision transformers (ViT, Swin) excel in accuracy but sacrifice efficiency}{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.4}Training Dynamics Comparison}{21}{subsubsection.4.5.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Training dynamics comparison showing (a) loss curves and (b) accuracy curves over 15 epochs. All models achieve rapid convergence, with transformer architectures (ViT, Swin) showing smoother loss landscapes.}}{22}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:training_curves}{{9}{22}{Training dynamics comparison showing (a) loss curves and (b) accuracy curves over 15 epochs. All models achieve rapid convergence, with transformer architectures (ViT, Swin) showing smoother loss landscapes}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.5}ROC Curve Analysis}{22}{subsubsection.4.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.6}Confusion Matrix Analysis}{22}{subsubsection.4.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.7}Per-Class F1-Score Analysis}{22}{subsubsection.4.5.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.8}Computational Requirements}{22}{subsubsection.4.5.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Cross-Validation Results}{22}{subsection.4.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces ROC curves for all evaluated models showing per-class AUC values. All models achieve near-perfect AUC ($>$0.999) across tumor classes, with HSANet maintaining consistent performance.}}{23}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:roc_comparison}{{10}{23}{ROC curves for all evaluated models showing per-class AUC values. All models achieve near-perfect AUC ($>$0.999) across tumor classes, with HSANet maintaining consistent performance}{figure.caption.15}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Five-fold stratified cross-validation results.}}{23}{table.caption.19}\protected@file@percent }
+\newlabel{tab:cv}{{6}{23}{Five-fold stratified cross-validation results}{table.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}External Validation Results}{23}{subsection.4.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Confusion matrices for all evaluated architectures. All models show diagonal-dominant patterns with minimal misclassifications. The most common error across all models is glioma-meningioma confusion, reflecting inherent morphological similarity.}}{24}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:confusion_comparison}{{11}{24}{Confusion matrices for all evaluated architectures. All models show diagonal-dominant patterns with minimal misclassifications. The most common error across all models is glioma-meningioma confusion, reflecting inherent morphological similarity}{figure.caption.16}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Cross-dataset external validation results.}}{24}{table.caption.20}\protected@file@percent }
+\newlabel{tab:external}{{7}{24}{Cross-dataset external validation results}{table.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Per-class F1-score comparison across all architectures. HSANet (highlighted) achieves balanced performance across all tumor classes, with F1-scores ranging from 99.69\% (glioma, meningioma) to 99.87\% (healthy).}}{25}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:f1_comparison}{{12}{25}{Per-class F1-score comparison across all architectures. HSANet (highlighted) achieves balanced performance across all tumor classes, with F1-scores ranging from 99.69\% (glioma, meningioma) to 99.87\% (healthy)}{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Computational requirements comparison: (a) Model size in millions of parameters and (b) inference time in milliseconds. HSANet requires only 15.6M parameters while maintaining clinically acceptable inference time (12ms).}}{25}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:computational_efficiency}{{13}{25}{Computational requirements comparison: (a) Model size in millions of parameters and (b) inference time in milliseconds. HSANet requires only 15.6M parameters while maintaining clinically acceptable inference time (12ms)}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Comprehensive performance comparison across internal and external validation datasets. (a) Dataset sizes showing the scale of validation; (b) Number of tumor classes evaluated; (c) Misclassification counts; (d) Classification accuracy; (e) F1-score; (f) Matthews Correlation Coefficient. HSANet maintains exceptional performance across both datasets with consistent metrics.}}{26}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:cross_dataset}{{14}{26}{Comprehensive performance comparison across internal and external validation datasets. (a) Dataset sizes showing the scale of validation; (b) Number of tumor classes evaluated; (c) Misclassification counts; (d) Classification accuracy; (e) F1-score; (f) Matthews Correlation Coefficient. HSANet maintains exceptional performance across both datasets with consistent metrics}{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Computational Efficiency}{26}{subsection.4.8}\protected@file@percent }
 \citation{van2021artificial}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{22}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Cross-Domain Generalization}{22}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Clinical Implications}{22}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Limitations}{23}{subsection.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{23}{section.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces PMRAM Bangladeshi dataset validation results. (a) Confusion matrix showing 99.47\% accuracy with 8 misclassifications, all involving glioma cases. (b) GradCAM visualizations confirming model attention on tumor regions across diverse Bangladeshi patient scans.}}{27}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:pmram_validation}{{15}{27}{PMRAM Bangladeshi dataset validation results. (a) Confusion matrix showing 99.47\% accuracy with 8 misclassifications, all involving glioma cases. (b) GradCAM visualizations confirming model attention on tumor regions across diverse Bangladeshi patient scans}{figure.caption.22}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Computational efficiency comparison across architectures.}}{27}{table.caption.23}\protected@file@percent }
+\newlabel{tab:compute}{{8}{27}{Computational efficiency comparison across architectures}{table.caption.23}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{28}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Cross-Domain Generalization}{28}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Clinical Implications}{28}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Limitations}{29}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{29}{section.6}\protected@file@percent }
 \bibstyle{elsarticle-num}
 \bibdata{references}
 \bibcite{sung2021global}{{1}{}{{}}{{}}}
@@ -154,4 +178,4 @@
 \bibcite{selvaraju2017grad}{{34}{}{{}}{{}}}
 \bibcite{landis1977measurement}{{35}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\gdef \@abspage@last{29}
+\gdef \@abspage@last{35}

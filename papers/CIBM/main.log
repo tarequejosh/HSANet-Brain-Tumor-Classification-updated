@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  1 FEB 2026 12:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  1 FEB 2026 22:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -482,7 +482,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figures/graphical_abstract.png, id=145, 246.6816pt x 246.6816pt>
+<figures/graphical_abstract.png, id=177, 246.6816pt x 246.6816pt>
 File: figures/graphical_abstract.png Graphic file (type png)
 <use figures/graphical_abstract.png>
 Package pdftex.def Info: figures/graphical_abstract.png  used on input line 57.
@@ -576,7 +576,7 @@ Overfull \hbox (45.76581pt too wide) in paragraph at lines 142--143
 
 
 [6]
-<figures/sample_mri_images.png, id=271, 1006.7211pt x 518.4168pt>
+<figures/sample_mri_images.png, id=303, 1006.7211pt x 518.4168pt>
 File: figures/sample_mri_images.png Graphic file (type png)
 <use figures/sample_mri_images.png>
 Package pdftex.def Info: figures/sample_mri_images.png  used on input line 155.
@@ -592,7 +592,7 @@ Overfull \hbox (16.7687pt too wide) in paragraph at lines 194--195
 -bone based on EfficientNet-
  []
 
-<figures/architecture_diagram.png, id=293, 246.6816pt x 246.6816pt>
+<figures/architecture_diagram.png, id=325, 246.6816pt x 246.6816pt>
 File: figures/architecture_diagram.png Graphic file (type png)
 <use figures/architecture_diagram.png>
 Package pdftex.def Info: figures/architecture_diagram.png  used on input line 1
@@ -608,12 +608,12 @@ Overfull \hbox (6.07428pt too wide) in paragraph at lines 232--233
 esid-ual preser-
  []
 
-<figures/amsm_module.png, id=310, 246.6816pt x 246.6816pt>
+<figures/amsm_module.png, id=342, 246.6816pt x 246.6816pt>
 File: figures/amsm_module.png Graphic file (type png)
 <use figures/amsm_module.png>
 Package pdftex.def Info: figures/amsm_module.png  used on input line 257.
 (pdftex.def)             Requested size: 187.19833pt x 187.20517pt.
-<figures/dam_module.png, id=311, 246.6816pt x 246.6816pt>
+<figures/dam_module.png, id=343, 246.6816pt x 246.6816pt>
 File: figures/dam_module.png Graphic file (type png)
 <use figures/dam_module.png>
 Package pdftex.def Info: figures/dam_module.png  used on input line 262.
@@ -664,12 +664,12 @@ Overfull \hbox (6.81285pt too wide) in paragraph at lines 373--374
 classes (Fig. []4[]a).
  []
 
-<figures/roc_curves.png, id=366, 722.7pt x 578.16pt>
+<figures/roc_curves.png, id=398, 722.7pt x 578.16pt>
 File: figures/roc_curves.png Graphic file (type png)
 <use figures/roc_curves.png>
 Package pdftex.def Info: figures/roc_curves.png  used on input line 381.
 (pdftex.def)             Requested size: 187.19833pt x 149.75343pt.
-<figures/confusion_matrix.png, id=367, 578.16pt x 433.62pt>
+<figures/confusion_matrix.png, id=399, 578.16pt x 433.62pt>
 File: figures/confusion_matrix.png Graphic file (type png)
 <use figures/confusion_matrix.png>
 Package pdftex.def Info: figures/confusion_matrix.png  used on input line 387.
@@ -696,13 +696,13 @@ rs on the sel-lar/suprasellar
 
 
 [16 <./figures/roc_curves.png> <./figures/confusion_matrix.png>]
-<figures/reliability_diagram.png, id=386, 867.24pt x 361.35pt>
+<figures/reliability_diagram.png, id=418, 867.24pt x 361.35pt>
 File: figures/reliability_diagram.png Graphic file (type png)
 <use figures/reliability_diagram.png>
 Package pdftex.def Info: figures/reliability_diagram.png  used on input line 44
 8.
 (pdftex.def)             Requested size: 175.49881pt x 73.12335pt.
-<figures/gradcam_grid.png, id=387, 1717.1352pt x 1182.819pt>
+<figures/gradcam_grid.png, id=419, 1717.1352pt x 1182.819pt>
 File: figures/gradcam_grid.png Graphic file (type png)
 <use figures/gradcam_grid.png>
 Package pdftex.def Info: figures/gradcam_grid.png  used on input line 454.
@@ -727,56 +727,119 @@ b-lished meth-
  []
 
 
-Overfull \hbox (193.1946pt too wide) in paragraph at lines 490--508
+Overfull \hbox (85.41386pt too wide) in paragraph at lines 491--512
  [][] 
  []
 
 
 
 [18]
-Overfull \hbox (73.36674pt too wide) in paragraph at lines 518--531
+<figures/fig1_accuracy_comparison.png, id=439, 860.7357pt x 426.393pt>
+File: figures/fig1_accuracy_comparison.png Graphic file (type png)
+<use figures/fig1_accuracy_comparison.png>
+Package pdftex.def Info: figures/fig1_accuracy_comparison.png  used on input li
+ne 526.
+(pdftex.def)             Requested size: 390.0pt x 193.19583pt.
+<figures/fig2_params_vs_accuracy.png, id=441, 715.7139pt x 498.9039pt>
+File: figures/fig2_params_vs_accuracy.png Graphic file (type png)
+<use figures/fig2_params_vs_accuracy.png>
+Package pdftex.def Info: figures/fig2_params_vs_accuracy.png  used on input lin
+e 537.
+(pdftex.def)             Requested size: 390.0pt x 271.86298pt.
+
+
+[19 <./figures/fig1_accuracy_comparison.png>]
+
+[20 <./figures/fig2_params_vs_accuracy.png>]
+<figures/fig3_radar_comparison.png, id=456, 703.428pt x 593.8185pt>
+File: figures/fig3_radar_comparison.png Graphic file (type png)
+<use figures/fig3_radar_comparison.png>
+Package pdftex.def Info: figures/fig3_radar_comparison.png  used on input line 
+556.
+(pdftex.def)             Requested size: 331.50238pt x 279.84679pt.
+<figures/fig4_training_curves.png, id=458, 1004.553pt x 354.6048pt>
+File: figures/fig4_training_curves.png Graphic file (type png)
+<use figures/fig4_training_curves.png>
+Package pdftex.def Info: figures/fig4_training_curves.png  used on input line 5
+74.
+(pdftex.def)             Requested size: 390.0pt x 137.66765pt.
+
+
+[21 <./figures/fig3_radar_comparison.png>]
+<figures/fig5_roc_curves.png, id=466, 1076.1003pt x 714.5094pt>
+File: figures/fig5_roc_curves.png Graphic file (type png)
+<use figures/fig5_roc_curves.png>
+Package pdftex.def Info: figures/fig5_roc_curves.png  used on input line 585.
+(pdftex.def)             Requested size: 390.0pt x 258.94579pt.
+<figures/fig6_confusion_matrices.png, id=468, 1075.8594pt x 714.5094pt>
+File: figures/fig6_confusion_matrices.png Graphic file (type png)
+<use figures/fig6_confusion_matrices.png>
+Package pdftex.def Info: figures/fig6_confusion_matrices.png  used on input lin
+e 596.
+(pdftex.def)             Requested size: 390.0pt x 259.0112pt.
+<figures/fig7_per_class_f1.png, id=470, 1005.2757pt x 499.6266pt>
+File: figures/fig7_per_class_f1.png Graphic file (type png)
+<use figures/fig7_per_class_f1.png>
+Package pdftex.def Info: figures/fig7_per_class_f1.png  used on input line 607.
+
+(pdftex.def)             Requested size: 390.0pt x 193.83202pt.
+<figures/fig8_computational_efficiency.png, id=472, 1003.1076pt x 426.8748pt>
+File: figures/fig8_computational_efficiency.png Graphic file (type png)
+<use figures/fig8_computational_efficiency.png>
+Package pdftex.def Info: figures/fig8_computational_efficiency.png  used on inp
+ut line 618.
+(pdftex.def)             Requested size: 390.0pt x 165.96593pt.
+
+Overfull \hbox (73.36674pt too wide) in paragraph at lines 631--644
  [][] 
  []
 
 
 
-[19]
-<figures/comprehensive_results.png, id=416, 850.1361pt x 603.9363pt>
+[22 <./figures/fig4_training_curves.png>]
+
+[23 <./figures/fig5_roc_curves.png>]
+
+[24 <./figures/fig6_confusion_matrices.png>]
+
+[25 <./figures/fig7_per_class_f1.png> <./figures/fig8_computational_efficiency.
+png>]
+<figures/comprehensive_results.png, id=506, 850.1361pt x 603.9363pt>
 File: figures/comprehensive_results.png Graphic file (type png)
 <use figures/comprehensive_results.png>
 Package pdftex.def Info: figures/comprehensive_results.png  used on input line 
-561.
+674.
 (pdftex.def)             Requested size: 390.0pt x 277.05841pt.
 
-Overfull \hbox (6.95322pt too wide) in paragraph at lines 566--567
-[]\T1/cmr/m/n/12 Figure []7[] demon-strates HSANet gen-er-al-iza-tion on the PM
--RAM Bangladeshi
+Overfull \hbox (12.82678pt too wide) in paragraph at lines 679--680
+[]\T1/cmr/m/n/12 Figure []15[] demon-strates HSANet gen-er-al-iza-tion on the P
+M-RAM Bangladeshi
  []
 
-<figures/pmram_confusion_matrix.png, id=418, 722.7pt x 578.16pt>
+<figures/pmram_confusion_matrix.png, id=508, 722.7pt x 578.16pt>
 File: figures/pmram_confusion_matrix.png Graphic file (type png)
 <use figures/pmram_confusion_matrix.png>
 Package pdftex.def Info: figures/pmram_confusion_matrix.png  used on input line
- 571.
+ 684.
 (pdftex.def)             Requested size: 187.19833pt x 149.75343pt.
-<figures/pmram_gradcam.png, id=419, 1110.0672pt x 853.2678pt>
+<figures/pmram_gradcam.png, id=509, 1110.0672pt x 853.2678pt>
 File: figures/pmram_gradcam.png Graphic file (type png)
 <use figures/pmram_gradcam.png>
-Package pdftex.def Info: figures/pmram_gradcam.png  used on input line 576.
+Package pdftex.def Info: figures/pmram_gradcam.png  used on input line 689.
 (pdftex.def)             Requested size: 187.19833pt x 143.88182pt.
 
 
-[20 <./figures/comprehensive_results.png>]
-Overfull \hbox (80.67899pt too wide) in paragraph at lines 591--604
+[26 <./figures/comprehensive_results.png>]
+Overfull \hbox (80.67899pt too wide) in paragraph at lines 704--717
  [][] 
  []
 
 
 
-[21 <./figures/pmram_confusion_matrix.png> <./figures/pmram_gradcam.png>]
+[27 <./figures/pmram_confusion_matrix.png> <./figures/pmram_gradcam.png>]
 
-[22]
-Overfull \hbox (147.30797pt too wide) in paragraph at lines 628--629
+[28]
+Overfull \hbox (147.30797pt too wide) in paragraph at lines 741--742
 \T1/cmr/m/n/12 els are pub-licly avail-able at []$\T1/cmtt/m/n/12 https : / / g
 ithub . com / tarequejosh / HSANet-[]Brain-[]Tumor-[]Classification$[]\T1/cmr/m
 /n/12 . 
@@ -784,31 +847,31 @@ ithub . com / tarequejosh / HSANet-[]Brain-[]Tumor-[]Classification$[]\T1/cmr/m
 
 
 
-[23]
-Overfull \hbox (10.18967pt too wide) in paragraph at lines 644--645
+[29]
+Overfull \hbox (10.18967pt too wide) in paragraph at lines 757--758
 \T1/cmtt/m/n/12 kaggle . com / datasets / masoudnickparvar / brain-[]tumor-[]mr
 i-[]dataset$[]\T1/cmr/m/n/12 . The
  []
 
 
-Overfull \hbox (22.34233pt too wide) in paragraph at lines 644--645
+Overfull \hbox (22.34233pt too wide) in paragraph at lines 757--758
 \T1/cmr/m/n/12 Figshare Brain Tu-mor Dataset is avail-able at []$\T1/cmtt/m/n/1
 2 https : / / figshare . com / articles /
  []
 
 
-Overfull \hbox (88.1808pt too wide) in paragraph at lines 644--645
+Overfull \hbox (88.1808pt too wide) in paragraph at lines 757--758
 \T1/cmr/m/n/12 are avail-able at []$\T1/cmtt/m/n/12 https : / / github . com / 
 tarequejosh / HSANet-[]Brain-[]Tumor-[]Classification$[]\T1/cmr/m/n/12 . 
  []
 
 (./main.bbl
 
-[24]
+[30]
 
-[25]
+[31]
 
-[26]
+[32]
 Underfull \hbox (badness 4739) in paragraph at lines 147--150
 \T1/cmtt/m/n/12 datasets / masoudnickparvar / brain-[]tumor-[]mri-[]dataset$[]\
 T1/cmr/m/n/12 , ac-cessed:
@@ -821,19 +884,19 @@ Underfull \hbox (badness 1087) in paragraph at lines 170--174
 
 )
 
-[27] (./main.aux)
+[33] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4354C23986ACE2782863E30907A2B21E;6228.
+(rerunfilecheck)             Checksum: E83D6CA1FCAF927783B19D4BA9E86CB0;7942.
  ) 
 Here is how much of TeX's memory you used:
- 13468 strings out of 473190
- 212205 string characters out of 5715801
- 615022 words of memory out of 5000000
- 36391 multiletter control sequences out of 15000+600000
+ 13562 strings out of 473190
+ 215151 string characters out of 5715801
+ 619101 words of memory out of 5000000
+ 36463 multiletter control sequences out of 15000+600000
  581433 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,11n,79p,1099b,682s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -865,10 +928,10 @@ t/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025/texmf-dist/
 fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2025/texmf-dist/fo
 nts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2025/texmf-dist/font
 s/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (29 pages, 17844559 bytes).
+Output written on main.pdf (35 pages, 19831208 bytes).
 PDF statistics:
- 631 PDF objects out of 1000 (max. 8388607)
- 517 compressed objects within 6 object streams
- 139 named destinations out of 1000 (max. 500000)
- 341 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 724 PDF objects out of 1000 (max. 8388607)
+ 588 compressed objects within 6 object streams
+ 161 named destinations out of 1000 (max. 500000)
+ 445 words of extra memory for PDF output out of 10000 (max. 10000000)
 

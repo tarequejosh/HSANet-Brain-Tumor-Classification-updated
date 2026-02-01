@@ -487,9 +487,10 @@ HSANet achieves state-of-the-art performance compared to published methods (Tabl
 \centering
 \caption{Comparison with published state-of-the-art methods. Ext.Val. = External validation on independent dataset; Unc. = Uncertainty quantification.}
 \label{tab:comparison}
+\small
 \begin{tabular}{llcccc}
 \toprule
-\textbf{Reference} & \textbf{Method} & \textbf{Acc. (\%)} & \textbf{Classes} & \textbf{Ext. Val.} & \textbf{Unc.} \\
+\textbf{Reference} & \textbf{Method} & \textbf{Acc. (\%)} & \textbf{Classes} & \textbf{Ext.} & \textbf{Unc.} \\
 \midrule
 Deepak \& Ameer (2019) & GoogLeNet + SVM & 98.00 & 3 & No & No \\
 Badža et al. (2020) & VGG-16 & 96.56 & 3 & No & No \\
@@ -499,13 +500,125 @@ Aurna et al. (2022) & EfficientNet-B0 & 98.87 & 4 & No & No \\
 Kibriya et al. (2022) & Custom CNN + SE & 98.64 & 4 & No & No \\
 Saeedi et al. (2023) & MRI-Transformer & 99.02 & 4 & No & No \\
 Tandel et al. (2024) & ResNet-50 Ensemble & 99.12 & 4 & No & No \\
-ViT-B/16$^\dagger$ & Vision Transformer & 99.85 & 4 & No & No \\
-Swin-Tiny$^\dagger$ & Swin Transformer & 99.77 & 4 & No & No \\
-\textbf{HSANet (Ours)} & \textbf{EffNet-B3 + AMSM/DAM + EDL} & \textbf{99.77} & \textbf{4} & \textbf{Yes} & \textbf{Yes} \\
+ViT-B/16$^\dagger$ & Vision Transformer & 99.77 & 4 & No & No \\
+Swin-Tiny$^\dagger$ & Swin Transformer & 99.85 & 4 & No & No \\
+VGG-16$^\dagger$ & VGG-16 & 99.85 & 4 & No & No \\
+ResNet-50$^\dagger$ & ResNet-50 & 99.08 & 4 & No & No \\
+EfficientNet-B3$^\dagger$ & EfficientNet-B3 & 99.54 & 4 & No & No \\
+\textbf{HSANet (Ours)} & \textbf{EffNet-B3 + AMSM/DAM} & \textbf{99.77} & \textbf{4} & \textbf{Yes} & \textbf{Yes} \\
 \bottomrule
 \multicolumn{6}{l}{\scriptsize $^\dagger$Our experimental results on the same dataset.}
 \end{tabular}
 \end{table}
+
+\subsubsection{Accuracy Comparison Analysis}
+
+Figure~\ref{fig:accuracy_comparison} presents the classification accuracy comparison across all evaluated architectures. Key observations include:
+
+\begin{itemize}
+\item \textbf{VGG-16 and Swin-Tiny achieve highest accuracy (99.85\%)}, demonstrating that both classical CNN and modern transformer architectures can achieve near-perfect performance on this dataset.
+\item \textbf{HSANet matches ViT-B/16 accuracy (99.77\%)} while providing unique advantages in uncertainty quantification and external validation.
+\item \textbf{All deep learning methods exceed 99\% accuracy}, confirming the effectiveness of transfer learning for brain tumor classification.
+\end{itemize}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig1_accuracy_comparison.png}
+\caption{Classification accuracy comparison across state-of-the-art architectures on the Brain Tumor MRI Dataset. All models achieve $>$99\% accuracy, with VGG-16 and Swin-Tiny achieving 99.85\%. HSANet achieves 99.77\% while uniquely providing uncertainty quantification.}
+\label{fig:accuracy_comparison}
+\end{figure}
+
+\subsubsection{Computational Efficiency Analysis}
+
+Beyond raw accuracy, computational efficiency is critical for clinical deployment. Figure~\ref{fig:efficiency_analysis} visualizes the trade-off between model parameters and classification accuracy.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig2_params_vs_accuracy.png}
+\caption{Efficiency analysis: Parameters (millions) versus accuracy. HSANet (star marker) achieves near-optimal accuracy with only 15.6M parameters---5.5$\times$ fewer than ViT-B/16 (85.8M) and 8.6$\times$ fewer than VGG-16 (134.3M). The green shaded region indicates optimal efficiency.}
+\label{fig:efficiency_analysis}
+\end{figure}
+
+Analysis of the efficiency-accuracy trade-off reveals:
+
+\begin{itemize}
+\item \textbf{VGG-16's accuracy comes at significant cost}: With 134.3M parameters, VGG-16 requires 8.6$\times$ more memory than HSANet while achieving only 0.08\% higher accuracy.
+\item \textbf{ViT-B/16 is parameter-heavy}: 85.8M parameters yield no accuracy advantage over HSANet, suggesting global self-attention may be less efficient than multi-scale convolution for brain tumor classification.
+\item \textbf{HSANet occupies the optimal region}: Achieving 99.77\% accuracy with 15.6M parameters provides the best balance for resource-constrained clinical environments.
+\end{itemize}
+
+\subsubsection{Multi-Dimensional Performance Comparison}
+
+Figure~\ref{fig:radar_comparison} presents a radar chart comparing models across four dimensions: accuracy, F1-score, parameter efficiency (inverse of parameter count), and inference speed.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig3_radar_comparison.png}
+\caption{Multi-dimensional performance comparison using radar chart. HSANet (bold line) achieves balanced performance across accuracy, F1-score, efficiency, and speed. Vision transformers (ViT, Swin) excel in accuracy but sacrifice efficiency.}
+\label{fig:radar_comparison}
+\end{figure}
+
+The radar visualization demonstrates that HSANet provides the most balanced performance profile, excelling across all dimensions without significant weaknesses. In contrast:
+\begin{itemize}
+\item \textbf{ViT-B/16} achieves strong accuracy but poor efficiency due to high parameter count
+\item \textbf{Swin-Tiny} balances accuracy and efficiency better than ViT but lacks uncertainty quantification
+\item \textbf{ResNet-50} offers good efficiency but lower accuracy (99.08\%)
+\end{itemize}
+
+\subsubsection{Training Dynamics Comparison}
+
+Figure~\ref{fig:training_curves} compares training loss and accuracy curves across architectures, revealing convergence characteristics.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig4_training_curves.png}
+\caption{Training dynamics comparison showing (a) loss curves and (b) accuracy curves over 15 epochs. All models achieve rapid convergence, with transformer architectures (ViT, Swin) showing smoother loss landscapes.}
+\label{fig:training_curves}
+\end{figure}
+
+\subsubsection{ROC Curve Analysis}
+
+Figure~\ref{fig:roc_comparison} presents ROC curves for each model, demonstrating per-class discrimination ability.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig5_roc_curves.png}
+\caption{ROC curves for all evaluated models showing per-class AUC values. All models achieve near-perfect AUC ($>$0.999) across tumor classes, with HSANet maintaining consistent performance.}
+\label{fig:roc_comparison}
+\end{figure}
+
+\subsubsection{Confusion Matrix Analysis}
+
+Figure~\ref{fig:confusion_comparison} presents confusion matrices for all models, enabling direct comparison of misclassification patterns.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig6_confusion_matrices.png}
+\caption{Confusion matrices for all evaluated architectures. All models show diagonal-dominant patterns with minimal misclassifications. The most common error across all models is glioma-meningioma confusion, reflecting inherent morphological similarity.}
+\label{fig:confusion_comparison}
+\end{figure}
+
+\subsubsection{Per-Class F1-Score Analysis}
+
+Figure~\ref{fig:f1_comparison} compares per-class F1-scores across models, revealing class-specific performance variations.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig7_per_class_f1.png}
+\caption{Per-class F1-score comparison across all architectures. HSANet (highlighted) achieves balanced performance across all tumor classes, with F1-scores ranging from 99.69\% (glioma, meningioma) to 99.87\% (healthy).}
+\label{fig:f1_comparison}
+\end{figure}
+
+\subsubsection{Computational Requirements}
+
+Figure~\ref{fig:computational_efficiency} directly compares model sizes and inference times, critical metrics for clinical deployment.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig8_computational_efficiency.png}
+\caption{Computational requirements comparison: (a) Model size in millions of parameters and (b) inference time in milliseconds. HSANet requires only 15.6M parameters while maintaining clinically acceptable inference time (12ms).}
+\label{fig:computational_efficiency}
+\end{figure}
 
 \subsection{Cross-Validation Results}
 

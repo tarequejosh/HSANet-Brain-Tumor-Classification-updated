@@ -7,45 +7,45 @@ Warning--I didn't find a database entry for "selvaraju2017gradcam"
 Warning--empty pages in raghu2019transfusion
 Warning--empty pages in lakshminarayanan2017simple
 Warning--empty pages in sensoy2018evidential
-You've used 34 entries,
+You've used 35 entries,
             2952 wiz_defined-function locations,
-            868 strings with 12408 characters,
-and the built_in function-call counts, 11524 in all, are:
-= -- 1033
-> -- 466
+            873 strings with 12679 characters,
+and the built_in function-call counts, 11802 in all, are:
+= -- 1053
+> -- 488
 < -- 12
-+ -- 178
-- -- 144
-* -- 794
-:= -- 1563
-add.period$ -- 35
-call.type$ -- 34
-change.case$ -- 35
++ -- 186
+- -- 151
+* -- 811
+:= -- 1610
+add.period$ -- 36
+call.type$ -- 35
+change.case$ -- 36
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 369
-empty$ -- 1275
-format.name$ -- 174
-if$ -- 2962
+cite$ -- 38
+duplicate$ -- 377
+empty$ -- 1301
+format.name$ -- 182
+if$ -- 3031
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 33
-newline$ -- 111
-num.names$ -- 34
-pop$ -- 238
+int.to.str$ -- 35
+missing$ -- 34
+newline$ -- 114
+num.names$ -- 35
+pop$ -- 245
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 770
+skip$ -- 788
 stack$ -- 0
 substring$ -- 664
-swap$ -- 101
+swap$ -- 102
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 84
-width$ -- 36
-write$ -- 292
+while$ -- 85
+width$ -- 37
+write$ -- 300
 (There were 4 warnings)

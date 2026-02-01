@@ -34,37 +34,38 @@
 \citation{chen2018encoder}
 \citation{lin2017feature}
 \citation{oktay2018attention}
-\citation{chen2018encoder}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{5}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Deep Learning for Brain Tumor Classification}{5}{subsection.2.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Multi-Scale Feature Extraction}{5}{subsection.2.2}\protected@file@percent }
+\citation{chen2018encoder}
 \citation{neal2012bayesian}
 \citation{gal2016dropout}
 \citation{lakshminarayanan2017simple}
 \citation{sensoy2018evidential}
 \citation{leibig2017leveraging}
-\citation{msoud_nickparvar_2021}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Uncertainty Quantification in Deep Learning}{6}{subsection.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Materials and Methods}{6}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset Description}{6}{subsection.3.1}\protected@file@percent }
+\citation{msoud_nickparvar_2021}
 \citation{aurna2022multiclass,saeedi2023mri}
 \citation{cheng2017figshare}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Materials and Methods}{7}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset Description}{7}{subsection.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}External Validation Dataset}{7}{subsection.3.2}\protected@file@percent }
 \citation{pmram2024}
+\citation{fateh2025brisc}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Sample MRI images from each tumor category and healthy controls across both the training dataset (Kaggle) and external validation dataset (Figshare). Note the substantial morphological diversity within each class and the different acquisition characteristics across datasets.}}{8}{figure.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:sample_mri}{{1}{8}{Sample MRI images from each tumor category and healthy controls across both the training dataset (Kaggle) and external validation dataset (Figshare). Note the substantial morphological diversity within each class and the different acquisition characteristics across datasets}{figure.caption.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Preprocessing and Data Augmentation}{8}{subsection.3.3}\protected@file@percent }
 \citation{tan2019efficientnet}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Preprocessing and Data Augmentation}{9}{subsection.3.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Network Architecture}{9}{subsection.3.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Overview}{9}{subsubsection.3.4.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Feature Extraction Backbone}{9}{subsubsection.3.4.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Overall HSANet architecture. Input MRI images (224$\times $224$\times $3) are processed through the EfficientNet-B3 backbone, with features extracted at three spatial resolutions (stages 3, 5, 7). Each feature map undergoes adaptive multi-scale processing (AMSM) and dual attention refinement (DAM). Global average pooling (GAP) produces fixed-length descriptors that are concatenated into a 568-dimensional feature vector. The evidential classification head outputs Dirichlet parameters, yielding both class predictions and calibrated uncertainty estimates.}}{10}{figure.caption.2}\protected@file@percent }
 \newlabel{fig:architecture}{{2}{10}{Overall HSANet architecture. Input MRI images (224$\times $224$\times $3) are processed through the EfficientNet-B3 backbone, with features extracted at three spatial resolutions (stages 3, 5, 7). Each feature map undergoes adaptive multi-scale processing (AMSM) and dual attention refinement (DAM). Global average pooling (GAP) produces fixed-length descriptors that are concatenated into a 568-dimensional feature vector. The evidential classification head outputs Dirichlet parameters, yielding both class predictions and calibrated uncertainty estimates}{figure.caption.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Adaptive Multi-Scale Module (AMSM)}{10}{subsubsection.3.4.3}\protected@file@percent }
 \citation{woo2018cbam}
-\citation{sensoy2018evidential}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Adaptive Multi-Scale Module (AMSM)}{11}{subsubsection.3.4.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.4}Dual Attention Module (DAM)}{11}{subsubsection.3.4.4}\protected@file@percent }
+\citation{sensoy2018evidential}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Detailed architecture of proposed modules. (a) Adaptive Multi-Scale Module (AMSM): Parallel dilated convolutions with dilation rates $d \in \{1, 2, 4\}$ capture features at effective receptive fields of 3$\times $3, 5$\times $5, and 9$\times $9. Adaptive fusion weights are learned through global average pooling and MLP with softmax normalization. A residual connection preserves the original features. (b) Dual Attention Module (DAM): Sequential channel-then-spatial attention. Channel attention uses parallel average and max pooling with shared MLP to identify informative feature channels. Spatial attention applies 7$\times $7 convolution on pooled features to highlight tumor-relevant regions.}}{12}{figure.caption.3}\protected@file@percent }
 \newlabel{fig:amsm_dam}{{3}{12}{Detailed architecture of proposed modules. (a) Adaptive Multi-Scale Module (AMSM): Parallel dilated convolutions with dilation rates $d \in \{1, 2, 4\}$ capture features at effective receptive fields of 3$\times $3, 5$\times $5, and 9$\times $9. Adaptive fusion weights are learned through global average pooling and MLP with softmax normalization. A residual connection preserves the original features. (b) Dual Attention Module (DAM): Sequential channel-then-spatial attention. Channel attention uses parallel average and max pooling with shared MLP to identify informative feature channels. Spatial attention applies 7$\times $7 convolution on pooled features to highlight tumor-relevant regions}{figure.caption.3}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.5}Evidential Classification Head}{12}{subsubsection.3.4.5}\protected@file@percent }
@@ -72,11 +73,11 @@
 \citation{van2021artificial}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Training Procedure}{13}{subsection.3.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}Loss Function}{13}{subsubsection.3.5.1}\protected@file@percent }
-\citation{selvaraju2017gradcam}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Training Procedure}{14}{subsection.3.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.7}Evaluation Metrics}{14}{subsection.3.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.7.1}Classification Performance}{14}{subsubsection.3.7.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.7.2}Model Calibration}{14}{subsubsection.3.7.2}\protected@file@percent }
+\citation{selvaraju2017gradcam}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.7.2}Model Calibration}{15}{subsubsection.3.7.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.7.3}Interpretability}{15}{subsubsection.3.7.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.8}Statistical Analysis}{15}{subsection.3.8}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.9}Implementation Details}{15}{subsection.3.9}\protected@file@percent }
@@ -84,50 +85,50 @@
 \@writefile{toc}{\contentsline {section}{\numberline {4}Results}{16}{section.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Classification Performance}{16}{subsection.4.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Model Calibration and Uncertainty Quantification}{16}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Clinical Deployment Thresholds}{16}{subsubsection.4.2.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Classification performance analysis. (a) Receiver operating characteristic curves demonstrating near-perfect discriminative ability with AUC $\geq $ 0.9999 for all classes. (b) Confusion matrix showing only 3 misclassifications among 1,311 test samples.}}{17}{figure.caption.6}\protected@file@percent }
 \newlabel{fig:roc_confusion}{{4}{17}{Classification performance analysis. (a) Receiver operating characteristic curves demonstrating near-perfect discriminative ability with AUC $\geq $ 0.9999 for all classes. (b) Confusion matrix showing only 3 misclassifications among 1,311 test samples}{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Clinical Deployment Thresholds}{17}{subsubsection.4.2.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Interpretability Analysis}{17}{subsection.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Ablation Study}{17}{subsection.4.4}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Model calibration and interpretability. (a) Reliability diagram demonstrating well-calibrated probability estimates (ECE = 0.019). (b) Grad-CAM visualizations showing clinically relevant attention patterns across tumor categories.}}{18}{figure.caption.9}\protected@file@percent }
 \newlabel{fig:calibration_gradcam}{{5}{18}{Model calibration and interpretability. (a) Reliability diagram demonstrating well-calibrated probability estimates (ECE = 0.019). (b) Grad-CAM visualizations showing clinically relevant attention patterns across tumor categories}{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Ablation Study}{18}{subsection.4.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Comparison with Prior Methods}{18}{subsection.4.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.1}Accuracy Comparison Analysis}{18}{subsubsection.4.5.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Classification accuracy comparison across state-of-the-art architectures on the Brain Tumor MRI Dataset. All models achieve $>$99\% accuracy, with VGG-16 and Swin-Tiny achieving 99.85\%. HSANet achieves 99.77\% while uniquely providing uncertainty quantification.}}{19}{figure.caption.12}\protected@file@percent }
 \newlabel{fig:accuracy_comparison}{{6}{19}{Classification accuracy comparison across state-of-the-art architectures on the Brain Tumor MRI Dataset. All models achieve $>$99\% accuracy, with VGG-16 and Swin-Tiny achieving 99.85\%. HSANet achieves 99.77\% while uniquely providing uncertainty quantification}{figure.caption.12}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.2}Computational Efficiency Analysis}{19}{subsubsection.4.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.3}Multi-Dimensional Performance Comparison}{19}{subsubsection.4.5.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Efficiency analysis: Parameters (millions) versus accuracy. HSANet (star marker) achieves near-optimal accuracy with only 15.6M parameters---5.5$\times $ fewer than ViT-B/16 (85.8M) and 8.6$\times $ fewer than VGG-16 (134.3M). The green shaded region indicates optimal efficiency.}}{20}{figure.caption.13}\protected@file@percent }
 \newlabel{fig:efficiency_analysis}{{7}{20}{Efficiency analysis: Parameters (millions) versus accuracy. HSANet (star marker) achieves near-optimal accuracy with only 15.6M parameters---5.5$\times $ fewer than ViT-B/16 (85.8M) and 8.6$\times $ fewer than VGG-16 (134.3M). The green shaded region indicates optimal efficiency}{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.3}Multi-Dimensional Performance Comparison}{20}{subsubsection.4.5.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Multi-dimensional performance comparison using radar chart. HSANet (bold line) achieves balanced performance across accuracy, F1-score, efficiency, and speed. Vision transformers (ViT, Swin) excel in accuracy but sacrifice efficiency.}}{21}{figure.caption.14}\protected@file@percent }
 \newlabel{fig:radar_comparison}{{8}{21}{Multi-dimensional performance comparison using radar chart. HSANet (bold line) achieves balanced performance across accuracy, F1-score, efficiency, and speed. Vision transformers (ViT, Swin) excel in accuracy but sacrifice efficiency}{figure.caption.14}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.4}Training Dynamics Comparison}{21}{subsubsection.4.5.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.5}ROC Curve Analysis}{21}{subsubsection.4.5.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.6}Confusion Matrix Analysis}{21}{subsubsection.4.5.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.7}Per-Class F1-Score Analysis}{21}{subsubsection.4.5.7}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Training dynamics comparison showing (a) loss curves and (b) accuracy curves over 15 epochs. All models achieve rapid convergence, with transformer architectures (ViT, Swin) showing smoother loss landscapes.}}{22}{figure.caption.15}\protected@file@percent }
 \newlabel{fig:training_curves}{{9}{22}{Training dynamics comparison showing (a) loss curves and (b) accuracy curves over 15 epochs. All models achieve rapid convergence, with transformer architectures (ViT, Swin) showing smoother loss landscapes}{figure.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces ROC curves for all evaluated models showing per-class AUC values. All models achieve near-perfect AUC ($>$0.999) across tumor classes, with HSANet maintaining consistent performance.}}{22}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:roc_comparison}{{10}{22}{ROC curves for all evaluated models showing per-class AUC values. All models achieve near-perfect AUC ($>$0.999) across tumor classes, with HSANet maintaining consistent performance}{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Confusion matrices for all evaluated architectures. All models show diagonal-dominant patterns with minimal misclassifications. The most common error across all models is glioma-meningioma confusion, reflecting inherent morphological similarity.}}{23}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:confusion_comparison}{{11}{23}{Confusion matrices for all evaluated architectures. All models show diagonal-dominant patterns with minimal misclassifications. The most common error across all models is glioma-meningioma confusion, reflecting inherent morphological similarity}{figure.caption.17}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.8}Computational Requirements}{23}{subsubsection.4.5.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Cross-Validation Results}{23}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.5}ROC Curve Analysis}{22}{subsubsection.4.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.6}Confusion Matrix Analysis}{22}{subsubsection.4.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.7}Per-Class F1-Score Analysis}{22}{subsubsection.4.5.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.8}Computational Requirements}{22}{subsubsection.4.5.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Cross-Validation Results}{22}{subsection.4.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces ROC curves for all evaluated models showing per-class AUC values. All models achieve near-perfect AUC ($>$0.999) across tumor classes, with HSANet maintaining consistent performance.}}{23}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:roc_comparison}{{10}{23}{ROC curves for all evaluated models showing per-class AUC values. All models achieve near-perfect AUC ($>$0.999) across tumor classes, with HSANet maintaining consistent performance}{figure.caption.16}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.7}External Validation Results}{23}{subsection.4.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Per-class F1-score comparison across all architectures. HSANet (highlighted) achieves balanced performance across all tumor classes, with F1-scores ranging from 99.69\% (glioma, meningioma) to 99.87\% (healthy).}}{24}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:f1_comparison}{{12}{24}{Per-class F1-score comparison across all architectures. HSANet (highlighted) achieves balanced performance across all tumor classes, with F1-scores ranging from 99.69\% (glioma, meningioma) to 99.87\% (healthy)}{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Computational requirements comparison: (a) Model size in millions of parameters and (b) inference time in milliseconds. HSANet requires only 15.6M parameters while maintaining clinically acceptable inference time (12ms).}}{24}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:computational_efficiency}{{13}{24}{Computational requirements comparison: (a) Model size in millions of parameters and (b) inference time in milliseconds. HSANet requires only 15.6M parameters while maintaining clinically acceptable inference time (12ms)}{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Comprehensive performance comparison across internal and external validation datasets. (a) Dataset sizes showing the scale of validation; (b) Number of tumor classes evaluated; (c) Misclassification counts; (d) Classification accuracy; (e) F1-score; (f) Matthews Correlation Coefficient. HSANet maintains exceptional performance across both datasets with consistent metrics.}}{25}{figure.caption.22}\protected@file@percent }
-\newlabel{fig:cross_dataset}{{14}{25}{Comprehensive performance comparison across internal and external validation datasets. (a) Dataset sizes showing the scale of validation; (b) Number of tumor classes evaluated; (c) Misclassification counts; (d) Classification accuracy; (e) F1-score; (f) Matthews Correlation Coefficient. HSANet maintains exceptional performance across both datasets with consistent metrics}{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Confusion matrices for all evaluated architectures. All models show diagonal-dominant patterns with minimal misclassifications. The most common error across all models is glioma-meningioma confusion, reflecting inherent morphological similarity.}}{24}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:confusion_comparison}{{11}{24}{Confusion matrices for all evaluated architectures. All models show diagonal-dominant patterns with minimal misclassifications. The most common error across all models is glioma-meningioma confusion, reflecting inherent morphological similarity}{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Per-class F1-score comparison across all architectures. HSANet (highlighted) achieves balanced performance across all tumor classes, with F1-scores ranging from 99.69\% (glioma, meningioma) to 99.87\% (healthy).}}{25}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:f1_comparison}{{12}{25}{Per-class F1-score comparison across all architectures. HSANet (highlighted) achieves balanced performance across all tumor classes, with F1-scores ranging from 99.69\% (glioma, meningioma) to 99.87\% (healthy)}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Computational requirements comparison: (a) Model size in millions of parameters and (b) inference time in milliseconds. HSANet requires only 15.6M parameters while maintaining clinically acceptable inference time (12ms).}}{25}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:computational_efficiency}{{13}{25}{Computational requirements comparison: (a) Model size in millions of parameters and (b) inference time in milliseconds. HSANet requires only 15.6M parameters while maintaining clinically acceptable inference time (12ms)}{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Computational Efficiency}{25}{subsection.4.8}\protected@file@percent }
 \citation{van2021artificial}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces PMRAM Bangladeshi dataset validation results. (a) Confusion matrix showing 99.47\% accuracy with 8 misclassifications, all involving glioma cases. (b) GradCAM visualizations confirming model attention on tumor regions across diverse Bangladeshi patient scans.}}{26}{figure.caption.23}\protected@file@percent }
-\newlabel{fig:pmram_validation}{{15}{26}{PMRAM Bangladeshi dataset validation results. (a) Confusion matrix showing 99.47\% accuracy with 8 misclassifications, all involving glioma cases. (b) GradCAM visualizations confirming model attention on tumor regions across diverse Bangladeshi patient scans}{figure.caption.23}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Computational Efficiency}{26}{subsection.4.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Comprehensive performance comparison across internal and external validation datasets. (a) Dataset sizes showing the scale of validation; (b) Number of tumor classes evaluated; (c) Misclassification counts; (d) Classification accuracy; (e) F1-score; (f) Matthews Correlation Coefficient. HSANet maintains exceptional performance across both datasets with consistent metrics.}}{26}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:cross_dataset}{{14}{26}{Comprehensive performance comparison across internal and external validation datasets. (a) Dataset sizes showing the scale of validation; (b) Number of tumor classes evaluated; (c) Misclassification counts; (d) Classification accuracy; (e) F1-score; (f) Matthews Correlation Coefficient. HSANet maintains exceptional performance across both datasets with consistent metrics}{figure.caption.22}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{26}{section.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces PMRAM Bangladeshi dataset validation results. (a) Confusion matrix showing 99.47\% accuracy with 8 misclassifications, all involving glioma cases. (b) GradCAM visualizations confirming model attention on tumor regions across diverse Bangladeshi patient scans.}}{27}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:pmram_validation}{{15}{27}{PMRAM Bangladeshi dataset validation results. (a) Confusion matrix showing 99.47\% accuracy with 8 misclassifications, all involving glioma cases. (b) GradCAM visualizations confirming model attention on tumor regions across diverse Bangladeshi patient scans}{figure.caption.23}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Cross-Domain Generalization}{27}{subsection.5.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Clinical Implications}{27}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Limitations}{27}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Limitations}{28}{subsection.5.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{28}{section.6}\protected@file@percent }
 \bibstyle{elsarticle-num}
 \bibdata{references}
@@ -162,26 +163,27 @@
 \bibcite{msoud_nickparvar_2021}{{29}{}{{}}{{}}}
 \bibcite{cheng2017figshare}{{30}{}{{}}{{}}}
 \bibcite{pmram2024}{{31}{}{{}}{{}}}
-\bibcite{lin2017focal}{{32}{}{{}}{{}}}
-\bibcite{van2021artificial}{{33}{}{{}}{{}}}
-\bibcite{landis1977measurement}{{34}{}{{}}{{}}}
+\bibcite{fateh2025brisc}{{32}{}{{}}{{}}}
+\bibcite{lin2017focal}{{33}{}{{}}{{}}}
+\bibcite{van2021artificial}{{34}{}{{}}{{}}}
+\bibcite{landis1977measurement}{{35}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces HSANet Training Procedure}}{33}{algocf.1}\protected@file@percent }
-\newlabel{alg:training}{{1}{33}{Training Procedure}{algocf.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Per-class classification performance on held-out test set (n = 1,311).}}{34}{table.caption.5}\protected@file@percent }
-\newlabel{tab:main_results}{{1}{34}{Per-class classification performance on held-out test set (n = 1,311)}{table.caption.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Uncertainty analysis for misclassified cases.}}{34}{table.caption.7}\protected@file@percent }
-\newlabel{tab:errors}{{2}{34}{Uncertainty analysis for misclassified cases}{table.caption.7}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Uncertainty threshold analysis for clinical deployment.}}{34}{table.caption.8}\protected@file@percent }
-\newlabel{tab:thresholds}{{3}{34}{Uncertainty threshold analysis for clinical deployment}{table.caption.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Ablation study quantifying component contributions. Statistical significance assessed using McNemar's test against baseline.}}{34}{table.caption.10}\protected@file@percent }
-\newlabel{tab:ablation}{{4}{34}{Ablation study quantifying component contributions. Statistical significance assessed using McNemar's test against baseline}{table.caption.10}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Comparison with published state-of-the-art methods. Ext.Val. = External validation on independent dataset; Unc. = Uncertainty quantification.}}{35}{table.caption.11}\protected@file@percent }
-\newlabel{tab:comparison}{{5}{35}{Comparison with published state-of-the-art methods. Ext.Val. = External validation on independent dataset; Unc. = Uncertainty quantification}{table.caption.11}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Five-fold stratified cross-validation results.}}{35}{table.caption.20}\protected@file@percent }
-\newlabel{tab:cv}{{6}{35}{Five-fold stratified cross-validation results}{table.caption.20}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Cross-dataset external validation results.}}{35}{table.caption.21}\protected@file@percent }
-\newlabel{tab:external}{{7}{35}{Cross-dataset external validation results}{table.caption.21}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Computational efficiency comparison across architectures.}}{36}{table.caption.24}\protected@file@percent }
-\newlabel{tab:compute}{{8}{36}{Computational efficiency comparison across architectures}{table.caption.24}{}}
-\gdef \@abspage@last{38}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces HSANet Training Procedure}}{34}{algocf.1}\protected@file@percent }
+\newlabel{alg:training}{{1}{34}{Training Procedure}{algocf.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Per-class classification performance on held-out test set (n = 1,311).}}{35}{table.caption.5}\protected@file@percent }
+\newlabel{tab:main_results}{{1}{35}{Per-class classification performance on held-out test set (n = 1,311)}{table.caption.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Uncertainty analysis for misclassified cases.}}{35}{table.caption.7}\protected@file@percent }
+\newlabel{tab:errors}{{2}{35}{Uncertainty analysis for misclassified cases}{table.caption.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Uncertainty threshold analysis for clinical deployment.}}{35}{table.caption.8}\protected@file@percent }
+\newlabel{tab:thresholds}{{3}{35}{Uncertainty threshold analysis for clinical deployment}{table.caption.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Ablation study quantifying component contributions. Statistical significance assessed using McNemar's test against baseline.}}{35}{table.caption.10}\protected@file@percent }
+\newlabel{tab:ablation}{{4}{35}{Ablation study quantifying component contributions. Statistical significance assessed using McNemar's test against baseline}{table.caption.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Comparison with published state-of-the-art methods. Ext.Val. = External validation on independent dataset; Unc. = Uncertainty quantification.}}{36}{table.caption.11}\protected@file@percent }
+\newlabel{tab:comparison}{{5}{36}{Comparison with published state-of-the-art methods. Ext.Val. = External validation on independent dataset; Unc. = Uncertainty quantification}{table.caption.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Five-fold stratified cross-validation results.}}{36}{table.caption.20}\protected@file@percent }
+\newlabel{tab:cv}{{6}{36}{Five-fold stratified cross-validation results}{table.caption.20}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Cross-dataset external validation results. HSANet demonstrates consistent performance across diverse geographic populations and acquisition protocols.}}{37}{table.caption.21}\protected@file@percent }
+\newlabel{tab:external}{{7}{37}{Cross-dataset external validation results. HSANet demonstrates consistent performance across diverse geographic populations and acquisition protocols}{table.caption.21}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Computational efficiency comparison across architectures.}}{37}{table.caption.24}\protected@file@percent }
+\newlabel{tab:compute}{{8}{37}{Computational efficiency comparison across architectures}{table.caption.24}{}}
+\gdef \@abspage@last{39}

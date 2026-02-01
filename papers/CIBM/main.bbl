@@ -161,6 +161,11 @@ M.~M. Rahman, M.~S.~M. Prottoy, M.~Chowdhury, R.~Rahman, A.~U. Tamim, {PMRAM}:
 \newblock \href {https://doi.org/10.17632/m7w55sw88b.1}
   {\path{doi:10.17632/m7w55sw88b.1}}.
 
+\bibitem{fateh2025brisc}
+A.~Fateh, Y.~Rezvani, S.~Moayedi, S.~Rezvani, F.~Fateh, M.~Fateh,
+  V.~Abolghasemi, Brisc: Annotated dataset for brain tumor segmentation and
+  classification with swin-hafnet, arXiv preprint arXiv:2506.14318 (2025).
+
 \bibitem{lin2017focal}
 T.-Y. Lin, P.~Goyal, R.~Girshick, K.~He, P.~Doll{\'a}r, Focal loss for dense
   object detection, in: Proceedings of the IEEE International Conference on
